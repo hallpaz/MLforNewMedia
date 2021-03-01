@@ -70,7 +70,42 @@ They try to derive a strategy that could agreggate neighbhood features such as t
 Nice property; I didn't get the "fully convolutional" meaning though:
 "As our model is fully-convolutional, we are able to reconstruct large scenes by applying it in a “sliding-window” fashion at inference time. We exploit this property to obtain reconstructions of entire apartments"
 
-On the other hand, Deep Local Shapes takes the key idea of DeepSDF one step further, by training a neural network to regress the Truncated Signed Distance Function (TSDF) using local latent codes. 
+
+
+**CvxNet: Learnable Convex Decomposition** convex decompositions as universal approximators of 3D geometry.
+
+"Our object is represented via an indicator O : R3 →[0, 1], and with ∂O = {x ∈ R3 | O(x) = 0.5} we indicate the surface of the object. The indicator function is defined such that {x ∈ R3 | O(x) = 0} defines the outside of the object and {x ∈ R3 | O(x) = 1} the inside. Given an input (e.g. an image, point cloud, or voxel grid) an encoder estimates the parameters {βk} of our template representation
+Oˆ(·)
+with K primitives (indexed by k). We then evaluate the template at random sample points x, and our training loss ensures
+Oˆ(x) ≈ O(x). In the discussion below, without
+loss of generality, we use 2D illustrative examples where O : R2 →[0, 1]. Our representation is a differentiable con- vex decomposition, which is used to train an image encoder in an end-to-end fashion."
+
+**BSP-Net**
+
+"In this paper, we develop a generative neural network
+which outputs polygonal meshes natively."
+
+"BSP-Net is the first deep generative network which di-
+rectly outputs compact and watertight polygonal meshes with arbitrary topology and structure variety.
+• The learned BSP-tree allows us to infer both shape seg- mentation and part correspondence.
+• By adjusting the encoder of our network, BSP-Net can also be adapted for shape auto-encoding and single-view 3D reconstruction (SVR).
+• To the best of our knowledge, BSP-Net is among the first to achieve structured SVR, reconstructing a segmented 3D shape from a single unstructured object image.
+• Last but not the least, our network is also the first which can reconstruct and recover sharp geometric features."
+
+"At inference time, we feed the input to the network to ob-tain components of the BSP-tree, i.e., leaf nodes (planes P)
+and connections (binary weights T). We then apply classic Constructive Solid Geometry (CSG) to extract the ex-plicit polygonal surfaces of the shapes."
+
+decompoe em planos, learneable plane parameters, learn how to combine (CSG) them and also the union
+
+"Another similar work is CvxNet [8], which decomposes
+shapes as a collection of convex primitives. However, BSP-Net differs from CvxNet in several significant ways: 1? we
+target low-poly reconstruction with sharp features, while
+they target smooth reconstruction; 2? their network always
+outputs K convexes, while the “right” number of primitives
+is learnt automatically in our method; 3? our optimization
+routine is completely different from theirs, as their compo-sitional tree structure is hard-coded."
+
+On the other hand, Deep Local **Shapes** takes the key idea of DeepSDF one step further, by training a neural network to regress the Truncated Signed Distance Function (TSDF) using local latent codes. "The key idea of DeepLS is to compose complex general shapes and scenes from a colletion of simple local shapes" it turns ou it is more efficient and flexible to encode the space of smaller local shapes and to compose the global shape from an adaptable amount of local codes.
 
 
 
@@ -81,7 +116,7 @@ It takes a key idea, usually inspired by classical results built over the time i
 
 It's interesting to note that many of these works can be trained on synthetic data and evaluated on real data, which demonstrantes a reasonable degree of generalization.
 
-Overfitting might be desirable in some cases.
+Overfitting might be desirable in some cases. An ideia that sounds counter-intuitive for most machine learning scenarios so far.
 
 
 
@@ -95,7 +130,7 @@ TODO: check name's spelling
 #### Post-doc researchers
 * Guilherme Shardong
 * Vinicius Silva
-* Thiago Novello
+* Tiago Novello
 
 #### PhD students
 * Daniel Yukimura
