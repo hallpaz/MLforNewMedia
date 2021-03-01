@@ -1,8 +1,9 @@
-----
+---
 layout: default
 title: ML for New Media
 nav_order: 0
-----
+---
+
 # Topics of Machine Learning for New Media
 
 These are my notes on a "reading course" for my PhD studies at Instituto de Matemática Pura e Aplicada ([IMPA](https://impa.br)). 

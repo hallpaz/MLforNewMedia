@@ -1,8 +1,8 @@
-----
+---
 layout: default
 title: Data Druven Graphics
 nav_order: 1
-----
+---
 
 # Data Driven Graphics 
 
