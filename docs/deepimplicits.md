@@ -49,7 +49,8 @@ On the other hand, Deep SDF decides to represent a surface implicitly by it's Si
 as the zero iso-surface decision boundaries of feed-forward
 networks trained to represent SDFs.
 A signed distance func- tion is a continuous function that, for a given spatial point, outputs the point’s distance to the closest surface, whose sign encodes whether the point is inside (negative) or out- side (positive) of the watertight surface:
-$$SDF(x) = s : x ∈ R3, s ∈ R$$.
+
+$$ SDF(x) = s : x ∈ R3, s ∈ R $$
 
 Our key idea is to directly regress the continuous SDF
 from point samples using deep neural networks. The re- sulting trained network is able to predict the SDF value of a given query position, from which we can extract the zero level-set surface by evaluating spatial samples. Such surface representation can be intuitively understood as a learned binary classifier for which the decision boundary is the surface of the shape itself as depicted in Fig.
@@ -107,7 +108,41 @@ routine is completely different from theirs, as their compo-sitional tree struct
 
 On the other hand, Deep Local **Shapes** takes the key idea of DeepSDF one step further, by training a neural network to regress the Truncated Signed Distance Function (TSDF) using local latent codes. "The key idea of DeepLS is to compose complex general shapes and scenes from a colletion of simple local shapes" it turns ou it is more efficient and flexible to encode the space of smaller local shapes and to compose the global shape from an adaptable amount of local codes.
 
+### 4th generation models
 
+All methods above tackle the problem of surface reconstruction from data, outputing either a polygonal mesh or an isosurface representation from which we could extract a mesh. On the other hand, we could think about a scene representation suitable for direct visualization or, in other words, instead of solving a surface reconstruction problem and render the surface to visualize it, we could solve a novel view synthesis problem and gerenate a visualization of an unseen viewpoint directly based on the data we have.
+
+NeRF solves the novel view synthesis problem by parameterizing a scene using a neural network. For each 3D point in space and observation direction the neural network outputs an RGB color and a volume density value. With this approach they were able to apply volume rendering techiniques to compose the desnsity values along the camera ray direction and generate a novel view. 
+
+"Because volume rendering is naturally differentiable, the only input required to optimize our representation is a set of images with known camera poses."
+
+This strategy tackles simultaneouly the problem of scene geometry understanding and view synthesis as they demonstrated the capability of render depth frames and use this depth information to address occlusion. Training a neural network using the view direction made it able to represent reflections and speculatities when the view direction changes.
+
+It's interesting to notice that at a first moment, they had trouble to represent the fine details of objects. As noted XXXX fully connected neural networks learn low frequecies much faster than high frequecies. This way, they apply
+
+n this paper, we train MLP networks to learn low dimensional functions, such as the function defined by an image that maps each (x, y) pixel coordinate to an output (r, g, b) color. A standard MLP is not able to learn such functions (blue border image). Simply applying a Fourier feature mapping to the input (x, y) points before passing them to the network allows for rapid convergence (orange border image).
+
+This Fourier feature mapping is very simple. For an input point v (for the example above, (x, y) pixel coordinates) and a random Gaussian matrix B, where each entry is drawn independently from a normal distribution N(0, σ2), we use
+
+$$ \gamma(v) = [cos(2\pi Bv), sin(2\pi Bv)]^T$$
+
+to map input coordinates into a higher dimensional feature space before passing them through the network."
+
+As we can imagine, this positional enconding based on Fourier Features transform is related to the SIREN approach wich formulated the problem mathematically and included the sinus function into the neural network representation.
+
+**Can we use NeRF to solve panorama interpolation problem?**
+**Can we make it more general in this case?**
+
+**Can I estimate the distance between two centers of captured panoramas?**
+
+
+Last, but not least, we have the approach used in [**Multiview Neural Surface Reconstruction by Disentangling Geometry and Appearance**](https://lioryariv.github.io/idr/). 
+
+"Given a set of input masked 2D images, our goal is to infer the following three unknowns: (i) the geometry of the scene, represented as a zero level-set of an MLP f; (ii) the light and reflectance properties of the scene; and (iii) the unknown camera parameters. Toward that goal we simulate the rendering process of an implicit neural geometry inspired by the rendering equation.
+The IDR forward model produces differentiable RGB values for a learnable camera position c and some fixed image pixel p as follows: the camera parameters and pixel define a viewing direction v, and we denote by x the intersection of the viewing ray c+tv with the implicit surface.
+A Sample Network module represents x, and the normal to the surface n as differentiable functions of the implicit geometry and camera parameters.
+The final radiance reflected from the geometry toward the camera c in direction v, i.e., RGB, is approximated by the Neural Renderer M, an MLP that takes as input the surface point x and normal n, the viewing direction v, and a global geometry feature vector z.
+In turn, the IDR model is incoporated in a loss comparing it to the ground truth pixel color, that enables learning simultaneously the geometry, its appearance and camera parameters."
 
 
 ## Remarks
