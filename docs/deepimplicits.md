@@ -146,7 +146,7 @@ Last, but not least, we have the approach used in [**Multiview Neural Surface Re
 The IDR forward model produces differentiable RGB values for a learnable camera position c and some fixed image pixel p as follows: the camera parameters and pixel define a viewing direction v, and we denote by x the intersection of the viewing ray c+tv with the implicit surface.
 A Sample Network module represents x, and the normal to the surface n as differentiable functions of the implicit geometry and camera parameters.
 The final radiance reflected from the geometry toward the camera c in direction v, i.e., RGB, is approximated by the Neural Renderer M, an MLP that takes as input the surface point x and normal n, the viewing direction v, and a global geometry feature vector z.
-In turn, the IDR model is incoporated in a loss comparing it to the ground truth pixel color, that enables learning simultaneously the geometry, its appearance and camera parameters."
+In turn, the IDR model is incorporated in a loss comparing it to the ground truth pixel color, that enables learning simultaneously the geometry, its appearance and camera parameters."
 
 
 ## Remarks
@@ -180,5 +180,5 @@ TODO: check name's spelling
 * Thales
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NDU4Mzc5OF19
+eyJoaXN0b3J5IjpbLTg2MzE2MDk3OF19
 -->
