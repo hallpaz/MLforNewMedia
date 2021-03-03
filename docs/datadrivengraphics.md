@@ -42,7 +42,7 @@ SOME WORKS....[X, XX, XXX]
 
 ### Multiview images
 
-
+Another way we can use images to represent 3D data is to work with a set of regular images with different viewpoints of the same object or scene. 
 
 ### Voxels
 
@@ -113,6 +113,6 @@ vertices of the test mesh are mapped to the reference mesh.
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MDMwMDI4NCwtMTE5ODc1NjE2MSwxND
+eyJoaXN0b3J5IjpbLTU2MzM2NzY2MiwtMTE5ODc1NjE2MSwxND
 Y3OTMzNjMxXX0=
 -->
