@@ -96,7 +96,7 @@ rectly outputs compact and watertight polygonal meshes with arbitrary topology a
 "At inference time, we feed the input to the network to ob-tain components of the BSP-tree, i.e., leaf nodes (planes P)
 and connections (binary weights T). We then apply classic Constructive Solid Geometry (CSG) to extract the ex-plicit polygonal surfaces of the shapes."
 
-decompoe em planos, learneable plane parameters, learn how to combine (CSG) them and also the union
+decompose em planos, learnable plane parameters, learn how to combine (CSG) them and also the union
 
 "Another similar work is CvxNet [8], which decomposes
 shapes as a collection of convex primitives. However, BSP-Net differs from CvxNet in several significant ways: 1? we
@@ -104,7 +104,7 @@ target low-poly reconstruction with sharp features, while
 they target smooth reconstruction; 2? their network always
 outputs K convexes, while the “right” number of primitives
 is learnt automatically in our method; 3? our optimization
-routine is completely different from theirs, as their compo-sitional tree structure is hard-coded."
+routine is completely different from theirs, as their compositional tree structure is hard-coded."
 
 On the other hand, Deep Local **Shapes** takes the key idea of DeepSDF one step further, by training a neural network to regress the Truncated Signed Distance Function (TSDF) using local latent codes. "The key idea of DeepLS is to compose complex general shapes and scenes from a colletion of simple local shapes" it turns ou it is more efficient and flexible to encode the space of smaller local shapes and to compose the global shape from an adaptable amount of local codes.
 
@@ -180,5 +180,5 @@ TODO: check name's spelling
 * Thales
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MzE2MDk3OF19
+eyJoaXN0b3J5IjpbLTE1NjAzMjI1N119
 -->
