@@ -10,6 +10,10 @@ Over the last decade, machine learning and specially deep learning promoted a re
 
 This results motivated researches to explore deep learning capabilities in more complex data representations such as graphs,
 
+... algumas técnicas desenvolvidas neste caminho tem nos ajudado a construir pontes entre todas as áreas da computação visual. Então num primeiro momento a gente teve processamento de imagens e visão computacional se aproximando ainda mais com as redes neurais, na medida em que a partir da compreensão do há na imagem a gente pôde ser capaz de realizar transferência de estilo, coloração de imagens em escala de cinza, o vulgo preto e branco e até mesmo geração de novas imagens segundo algum critério baseado em dados.
+
+Agora, a gente tá diante da oportunidade de agregar a computação gráfica e o processamento geométrico neste paradigma, uma vez que estamos aprendendo a lidar com dados mais gerais, fora da estrutura fixa e limitada das imagens. Mais do que isso, a gente está conseguindo inferir a geometria de objetos e cenas a partir de imagens!!!
+
 Now, we are capable of dealing with more complex data, non euclidean data and integrate in this cycle the computer graphics and geometry processing .
 
 But to make data driven graphics, we need to represent 3D data and be able to either apply our known techniques in these data or develop new techiniques to to deal with them. It turns out that research community's been doing both.
@@ -135,5 +139,5 @@ vertices of the test mesh are mapped to the reference mesh.
 ----
 DIVULGAR LIVE no LINKEDIN E TWITTER
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2NzkzMzYzMV19
+eyJoaXN0b3J5IjpbLTE0OTcyMjQ5MjUsMTQ2NzkzMzYzMV19
 -->
