@@ -36,7 +36,7 @@ Think about data for computer graphics as 3D data is kind of unfair and doens't 
 
 ### RGB-D Images
 
-Depth images and RGB-D data are quite easy to capture nowadays. It's been over a decade since low cost devices as the Kinect are available in the market and we had multiple works to reduce noise  and reconstruct surfaces from these kind of data.
+Depth images and RGB-D data are quite easy to capture nowadays. It's been over a decade since low cost devices as the Kinect are available in the market and we had multiple works showing us how to deal with to reduce noise in depth maps and reconstruct surfaces from these kind of data.
 kinect...
 
 ### Multiview images
@@ -113,6 +113,6 @@ vertices of the test mesh are mapped to the reference mesh.
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIxMTYxNDIyLC0xMTk4NzU2MTYxLDE0Nj
-c5MzM2MzFdfQ==
+eyJoaXN0b3J5IjpbLTg2MzQxNTIyNywtMTE5ODc1NjE2MSwxND
+Y3OTMzNjMxXX0=
 -->
