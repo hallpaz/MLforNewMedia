@@ -40,12 +40,13 @@ Depth images and RGB-D data are quite easy to capture nowadays. It's been over a
 
 SOME WORKS....[X, XX, XXX]
 
+### Multiview images
+
+
+
 ### Voxels
 
 - natural extension of a pixel to 3D
-
-### Multiview images
-
 
 ### Point Clouds
 
@@ -112,6 +113,6 @@ vertices of the test mesh are mapped to the reference mesh.
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0Njg0NDA4MiwtMTE5ODc1NjE2MSwxND
+eyJoaXN0b3J5IjpbLTY5MDMwMDI4NCwtMTE5ODc1NjE2MSwxND
 Y3OTMzNjMxXX0=
 -->
