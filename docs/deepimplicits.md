@@ -106,7 +106,7 @@ outputs K convexes, while the “right” number of primitives
 is learnt automatically in our method; 3? our optimization
 routine is completely different from theirs, as their compositional tree structure is hard-coded."
 
-On the other hand, Deep Local **Shapes** takes the key idea of DeepSDF one step further, by training a neural network to regress the Truncated Signed Distance Function (TSDF) using local latent codes. "The key idea of DeepLS is to compose complex general shapes and scenes from a colletion of simple local shapes" it turns ou it is more efficient and flexible to encode the space of smaller local shapes and to compose the global shape from an adaptable amount of local codes.
+On the other hand, Deep Local **Shapes** takes the key idea of DeepSDF one step further, by training a neural network to regress the Truncated Signed Distance Function (TSDF) using local latent codes. "The key idea of DeepLS is to compose complex general shapes and scenes from a collection of simple local shapes" it turns ou it is more efficient and flexible to encode the space of smaller local shapes and to compose the global shape from an adaptable amount of local codes.
 
 ### 3rd generation models
 
@@ -185,6 +185,5 @@ TODO: check name's spelling
 * Thales
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTI5MjQ0MTYsLTE1MjgyNTk1NzZdfQ
-==
+eyJoaXN0b3J5IjpbLTcxNDk2MzcyNSwtMTUyODI1OTU3Nl19
 -->
