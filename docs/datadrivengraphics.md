@@ -1,43 +1,51 @@
 ---
 layout: default
-title: Data Druven Graphics
+title: Data Driven Graphics
 nav_order: 1
 ---
 
 # Data Driven Graphics 
 
-## DISCLAIMER: THIS IS A SKETCH YET =)
-
-Over the last decade, machine learning and specially deep learning promoted a revolution in multiple areas. In the Visual Computing domain, both image processing and computer vision benefited of this scenario and we saw machine learning models achieving the state of the art for *object detection and recognition* [X],  new techniques
-
-The convolutional network model 
+Over the last decade, machine learning and specially deep learning promoted a revolution in multiple areas. For instance, in the Visual Computing domain, both image processing and computer vision benefited of this scenario as we saw machine learning models achieving the state of the art performance for tasks suchs as *object detection and recognition* and impressive results in generation tasks such as *image inpainting*, *image upsampling* and even whole videos of people moving and even talking - raising concerns about what we called *deepfakes*.
 
 
-## Change of paradigm
-
-We have a changed to a data driven paradigm in which our models are estimated from data.
-
-shows 2 things
-- change of paradigm
-- application of classical ideias still holds
-
-## AI Graphics
 
 Now, we are capable of dealing with more complex data, non euclidean data and integrate in this cycle the computer graphics and geometry processing .
 
 But to make data driven graphics, we need to represent 3D data and be able to either apply our known techiniques in these data or develop new techiniques to to deal with them. It turns out that research community's been doing both.
 
+
 ## 3D Data Representations
 
+We start briefly describing some 3D data representations from those more related to the techniques and architectures employed in deep learning for computer vision.
+
+### Descriptors and Projections
+
+
+"they cannot learn the discriminative features from 3D shapes."
+
+[X] describes 
+
+
+"Sinha et al. in [120] proposed
+geometry images where 3D objects were projected into 2D grid so that the classical 2D CNNs can
+be employed."
+
 Think about data for computer graphics as 3D data is kind of unfair and doens't convey the 
-
-### Multiview images
-
 
 
 ### RGB-D Images
 
 kinect...
+
+### Multiview images
+
+
+
+### Voxels
+
+- natural extension of a pixel to 3D
+
 
 ### Point Clouds
 
@@ -58,10 +66,6 @@ In particular, multiview images are here "since forever" and we can avail all th
 
 "As noticed in all the previously proposed methods, the main problem in processing point clouds is the un-ordered structure of this representation where researchers are trying to make the learning process invariant to the order of the point cloud. Most of these methods resorted to clustering techniques to opt for similar points and process them together."
 
-### Voxels
-
-- natural extension of a pixel to 3D
-
 ### Polygonal Mesh
 
 - standard for many applications in computer graphics, specially visual media.
@@ -76,6 +80,18 @@ In particular, multiview images are here "since forever" and we can avail all th
 ### These representations are not exaustive...
 
 Ideally we want to input the more abundant and easily available data representation such as ordinary images and be able to infer/reconstruct the most a maior quantidade possível of scene/object properties such as it's geometry, topology, appearance and so on, in a useful and standard representation for new media applications.
+
+
+## Change of paradigm: AI Graphics
+
+The convolutional network model 
+
+We have a changed to a data driven paradigm in which our models are estimated from data.
+
+shows 2 things
+- change of paradigm
+- application of classical ideias still holds
+
 
 # TOOLs
 

@@ -169,7 +169,7 @@ TODO: check name's spelling
 
 #### PhD students
 * Daniel Yukimura
-* Caio
+* Caio Souza
 * Hallison Paz (me)
 
 #### Msc Students
