@@ -10,7 +10,7 @@ Over the last decade, machine learning and specially deep learning promoted a re
 
 This results motivated researches to explore deep learning capabilities in more complex data representations such as graphs and 3D geometry. Working with more general data, outside of grid or sequential structures as images or audio allows us to derive data driven methods for computer graphics and geometry processing, building bridges to computer vision and image processing though machine learning techniques.
 
-However, to make *data driven graphics*, we need to represent 3D data and be able to either apply our known techniques in these data or develop new techiniques to to deal with them. It turns out that research community's been doing both.
+However, to make *data driven graphics*, we need to represent 3D data and be able to either apply our known techniques in these data or develop new methods to to deal with them. It turns out that research community's been doing both.
 
 
 ## 3D Data Representations
@@ -107,6 +107,6 @@ sparse and dense correspondence. Sparse correspondence means that only a subset 
 of the test mesh are mapped to the reference mesh. However, in dense correspondence, all the
 vertices of the test mesh are mapped to the reference mesh.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NDI2MTQ4MywtMTE5ODc1NjE2MSwxND
+eyJoaXN0b3J5IjpbLTgxNDEzODA1MSwtMTE5ODc1NjE2MSwxND
 Y3OTMzNjMxXX0=
 -->
