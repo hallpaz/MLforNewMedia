@@ -8,9 +8,7 @@ nav_order: 1
 
 Over the last decade, machine learning and specially deep learning promoted a revolution in multiple areas. For instance, in the Visual Computing domain, both image processing and computer vision benefited of this scenario as we saw machine learning models achieving the state of the art performance for tasks such as *object detection and recognition* and impressive results in generation tasks such as *image in-painting*, *image upsampling* and even whole videos of people moving and even talking - raising concerns about what we called *deepfakes*.
 
-This results motivated researches to explore deep learning capabilities in more complex data representations such as graphs and 3D geometry. ... for us to derive data driven methods for computer graphics.
-
-... algumas técnicas desenvolvidas neste caminho tem nos ajudado a construir pontes entre todas as áreas da computação visual. Então num primeiro momento a gente teve processamento de imagens e visão computacional se aproximando ainda mais com as redes neurais, na medida em que a partir da compreensão do há na imagem a gente pôde ser capaz de realizar transferência de estilo, coloração de imagens em escala de cinza, o vulgo preto e branco e até mesmo geração de novas imagens segundo algum critério baseado em dados.
+This results motivated researches to explore deep learning capabilities in more complex data representations such as graphs and 3D geometry. ... for us to derive data driven methods for computer graphics and geometry processing, build bridges to computer vision and image processing.
 
 Agora, a gente tá diante da oportunidade de agregar a computação gráfica e o processamento geométrico neste paradigma, uma vez que estamos aprendendo a lidar com dados mais gerais, fora da estrutura fixa e limitada das imagens. Mais do que isso, a gente está conseguindo inferir a geometria de objetos e cenas a partir de imagens!!!
 
@@ -139,5 +137,5 @@ vertices of the test mesh are mapped to the reference mesh.
 ----
 DIVULGAR LIVE no LINKEDIN E TWITTER
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTMxNjA4MjksMTQ2NzkzMzYzMV19
+eyJoaXN0b3J5IjpbLTE5MTU4ODIwMTMsMTQ2NzkzMzYzMV19
 -->
