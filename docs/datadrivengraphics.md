@@ -15,7 +15,7 @@ However, to make *data driven graphics*, we need to represent 3D data and be abl
 
 ## 3D Data Representations
 
-We start briefly describing some 3D data representations. Unlike images, which have a well stablished computational representation in terms of matrices of pixels, tridimensional objects and scenes have many different representation with different trade-offs. We don't intend to make an exhaustive analysis of these representations. For more details, refer to [1]
+We start briefly describing some 3D data representations. Unlike images, which have a well stablished computational representation in terms of matrices of pixels, tridimensional objects and scenes have many different representation with different trade-offs. We don't intend to make an exhaustive analysis of these representations. For more details, please, refer to [1].
 
 from those more related to the techniques and architectures employed in deep learning for computer vision.
 
@@ -112,6 +112,6 @@ vertices of the test mesh are mapped to the reference mesh.
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDU0NjIxLC0xMTk4NzU2MTYxLDE0Nj
+eyJoaXN0b3J5IjpbNzIzNTk2NjQzLC0xMTk4NzU2MTYxLDE0Nj
 c5MzM2MzFdfQ==
 -->
