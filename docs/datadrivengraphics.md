@@ -8,7 +8,7 @@ nav_order: 1
 
 Over the last decade, machine learning and specially deep learning promoted a revolution in multiple areas. For instance, in the Visual Computing domain, both image processing and computer vision benefited of this scenario as we saw machine learning models achieving the state of the art performance for tasks such as *object detection and recognition* and impressive results in generation tasks such as *image in-painting*, *image upsampling* and even whole videos of people moving and even talking - raising concerns about what we called *deepfakes*.
 
-This results motivated researches to explore deep learning capabilities in 
+This results motivated researches to explore deep learning capabilities in more complex data representations such as graphs,
 
 Now, we are capable of dealing with more complex data, non euclidean data and integrate in this cycle the computer graphics and geometry processing .
 
@@ -135,5 +135,5 @@ vertices of the test mesh are mapped to the reference mesh.
 ----
 DIVULGAR LIVE no LINKEDIN E TWITTER
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzA4MjY1NzBdfQ==
+eyJoaXN0b3J5IjpbMTQ2NzkzMzYzMV19
 -->
