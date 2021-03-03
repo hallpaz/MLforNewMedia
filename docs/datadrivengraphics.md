@@ -6,13 +6,11 @@ nav_order: 1
 
 # Data Driven Graphics 
 
-Over the last decade, machine learning and specially deep learning promoted a revolution in multiple areas. For instance, in the Visual Computing domain, both image processing and computer vision benefited of this scenario as we saw machine learning models achieving the state of the art performance for tasks suchs as *object detection and recognition* and impressive results in generation tasks such as *image inpainting*, *image upsampling* and even whole videos of people moving and even talking - raising concerns about what we called *deepfakes*.
-
-
+Over the last decade, machine learning and specially deep learning promoted a revolution in multiple areas. For instance, in the Visual Computing domain, both image processing and computer vision benefited of this scenario as we saw machine learning models achieving the state of the art performance for tasks such as *object detection and recognition* and impressive results in generation tasks such as *image in-painting*, *image upsampling* and even whole videos of people moving and even talking - raising concerns about what we called *deepfakes*.
 
 Now, we are capable of dealing with more complex data, non euclidean data and integrate in this cycle the computer graphics and geometry processing .
 
-But to make data driven graphics, we need to represent 3D data and be able to either apply our known techiniques in these data or develop new techiniques to to deal with them. It turns out that research community's been doing both.
+But to make data driven graphics, we need to represent 3D data and be able to either apply our known techniques in these data or develop new techiniques to to deal with them. It turns out that research community's been doing both.
 
 
 ## 3D Data Representations
@@ -134,3 +132,6 @@ vertices of the test mesh are mapped to the reference mesh.
 
 ----
 DIVULGAR LIVE no LINKEDIN E TWITTER
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbODY4NTA4NzE1XX0=
+-->
