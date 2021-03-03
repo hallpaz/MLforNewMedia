@@ -15,7 +15,7 @@ However, to make *data driven graphics*, we need to represent 3D data and be abl
 
 ## 3D Data Representations
 
-We start briefly describing some 3D data representations. Unlike images, which have a well stablished computational representation in terms of matrices of pixels, from those more related to the techniques and architectures employed in deep learning for computer vision.
+We start briefly describing some 3D data representations. Unlike images, which have a well stablished computational representation in terms of matrices of pixels, tridimensional objects and scenes have many different representation with different trade-offs. from those more related to the techniques and architectures employed in deep learning for computer vision.
 
 ### Descriptors and Projections
 
@@ -107,6 +107,6 @@ sparse and dense correspondence. Sparse correspondence means that only a subset 
 of the test mesh are mapped to the reference mesh. However, in dense correspondence, all the
 vertices of the test mesh are mapped to the reference mesh.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjMwNzk1NSwtMTE5ODc1NjE2MSwxND
+eyJoaXN0b3J5IjpbMjA4NDk3MTQzMCwtMTE5ODc1NjE2MSwxND
 Y3OTMzNjMxXX0=
 -->
