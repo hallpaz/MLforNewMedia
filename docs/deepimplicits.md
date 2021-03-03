@@ -108,17 +108,21 @@ routine is completely different from theirs, as their compo-sitional tree struct
 
 On the other hand, Deep Local **Shapes** takes the key idea of DeepSDF one step further, by training a neural network to regress the Truncated Signed Distance Function (TSDF) using local latent codes. "The key idea of DeepLS is to compose complex general shapes and scenes from a colletion of simple local shapes" it turns ou it is more efficient and flexible to encode the space of smaller local shapes and to compose the global shape from an adaptable amount of local codes.
 
+### 3rd generation models
+
+These models represent images as the solution to the Eikonal equation
+
 ### 4th generation models
 
-All methods above tackle the problem of surface reconstruction from data, outputing either a polygonal mesh or an isosurface representation from which we could extract a mesh. On the other hand, we could think about a scene representation suitable for direct visualization or, in other words, instead of solving a surface reconstruction problem and render the surface to visualize it, we could solve a novel view synthesis problem and gerenate a visualization of an unseen viewpoint directly based on the data we have.
+All methods above tackle the problem of surface reconstruction from data, outputing either a polygonal mesh or an isosurface representation from which we could extract a mesh. On the other hand, we could think about a scene representation suitable for direct visualization or, in other words, instead of solving a surface reconstruction problem and render the surface to visualize it, we could solve a novel view synthesis problem and generate a visualization of an unseen viewpoint directly based on the data we have.
 
-NeRF solves the novel view synthesis problem by parameterizing a scene using a neural network. For each 3D point in space and observation direction the neural network outputs an RGB color and a volume density value. With this approach they were able to apply volume rendering techiniques to compose the desnsity values along the camera ray direction and generate a novel view. 
+NeRF solves the novel view synthesis problem by parameterizing a scene using a neural network. For each 3D point in space and observation direction the neural network outputs an RGB color and a volume density value. With this approach they were able to apply volume rendering techniques to compose the density values along the camera ray direction and generate a novel view. 
 
 "Because volume rendering is naturally differentiable, the only input required to optimize our representation is a set of images with known camera poses."
 
-This strategy tackles simultaneouly the problem of scene geometry understanding and view synthesis as they demonstrated the capability of render depth frames and use this depth information to address occlusion. Training a neural network using the view direction made it able to represent reflections and speculatities when the view direction changes.
+This strategy tackles simultaneously the problem of scene geometry understanding and view synthesis as they demonstrated the capability of render depth frames and use this depth information to address occlusion. Training a neural network using the view direction made it able to represent reflections and specularities when the view direction changes.
 
-It's interesting to notice that at a first moment, they had trouble to represent the fine details of objects. As noted XXXX fully connected neural networks learn low frequecies much faster than high frequecies. This way, they apply
+It's interesting to notice that at a first moment, they had trouble to represent the fine details of objects. As noted XXXX fully connected neural networks learn low frequencies much faster than high frequencies. This way, they apply
 
 n this paper, we train MLP networks to learn low dimensional functions, such as the function defined by an image that maps each (x, y) pixel coordinate to an output (r, g, b) color. A standard MLP is not able to learn such functions (blue border image). Simply applying a Fourier feature mapping to the input (x, y) points before passing them to the network allows for rapid convergence (orange border image).
 
@@ -175,3 +179,6 @@ TODO: check name's spelling
 #### Msc Students
 * Thales
   
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTU5NDU4Mzc5OF19
+-->
