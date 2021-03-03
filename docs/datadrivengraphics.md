@@ -36,7 +36,7 @@ Think about data for computer graphics as 3D data is kind of unfair and doens't 
 
 ### RGB-D Images
 
-Depth images and RGB-D data are quite easy to capture nowadays. It's been over a decade since low cost devices as the Kinect are available in the market and we had multiple works showing us how to deal with to noise in depth maps and even how to reconstruct surfaces from these kind of data. RGB-D data are a natural choice to represent 3D data as it comprises both appearance and geometry of a scene and it has a grid structure as regular images. This way, we can use Convolutional Neural networks
+Depth images and RGB-D data are quite easy to capture nowadays. It's been over a decade since low cost devices as the Kinect are available in the market and we had multiple works showing us how to deal with to noise in depth maps and even how to reconstruct surfaces from these kind of data. RGB-D data are a natural choice to represent 3D data as it comprises both appearance and geometry of a scene and it has a grid structure as regular images. This way, we can use everything already applied to images, including Convolutional Neural networks (CNNs) and we must only figure out how to make the best use of the depth channel to solve problems in 3D.
 
 
 ### Multiview images
@@ -113,6 +113,6 @@ vertices of the test mesh are mapped to the reference mesh.
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzE3MzcyNjQsLTExOTg3NTYxNjEsMT
+eyJoaXN0b3J5IjpbLTE0NjA0MTQzOTYsLTExOTg3NTYxNjEsMT
 Q2NzkzMzYzMV19
 -->
