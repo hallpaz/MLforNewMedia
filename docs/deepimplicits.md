@@ -114,10 +114,12 @@ These models represent images as the solution to the Eikonal equation.
 
 - reconstruct from it's derivative
 - an interesting point to note is an improvement to deep learning solutions is derived from this approach as SIREN Sinusoidal 
+$$||\nabla f|| = 1||$$ 
+This particular case of the Eikonal Equation representas a signed distance function.
 
 ### 4th generation models
 
-All methods above tackle the problem of surface reconstruction from data, outputing either a polygonal mesh or an isosurface representation from which we could extract a mesh. On the other hand, we could think about a scene representation suitable for direct visualization or, in other words, instead of solving a surface reconstruction problem and render the surface to visualize it, we could solve a novel view synthesis problem and generate a visualization of an unseen viewpoint directly based on the data we have.
+All methods above tackle the problem of surface reconstruction from data, outputting either a polygonal mesh or an isosurface representation from which we could extract a mesh. On the other hand, we could think about a scene representation suitable for direct visualization or, in other words, instead of solving a surface reconstruction problem and render the surface to visualize it, we could solve a novel view synthesis problem and generate a visualization of an unseen viewpoint directly based on the data we have.
 
 NeRF solves the novel view synthesis problem by parameterizing a scene using a neural network. For each 3D point in space and observation direction the neural network outputs an RGB color and a volume density value. With this approach they were able to apply volume rendering techniques to compose the density values along the camera ray direction and generate a novel view. 
 
@@ -183,5 +185,6 @@ TODO: check name's spelling
 * Thales
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjgyNTk1NzZdfQ==
+eyJoaXN0b3J5IjpbLTEyNTI5MjQ0MTYsLTE1MjgyNTk1NzZdfQ
+==
 -->
