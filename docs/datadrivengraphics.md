@@ -40,7 +40,8 @@ RGB-D data are a natural choice to represent 3D data as it comprises both appear
 
 SOME WORKS....[X, XX, XXX]
 
-Besides that, depth images and RGB-D data are quite easy to capture nowadays. It's been over a decade since low cost devices as the Kinect are available in the market and today we can find depth sensors in mobile devices such as the iPad. we had several works showing us how to deal with noise in depth maps and even how to reconstruct surfaces from these kind of data. 
+Besides that, depth images and RGB-D data are quite easy to capture nowadays. It's been over a decade since low cost devices as the Kinect are available in the market and today we can even find depth sensors in mobile devices such as the iPad. Due to this scenario, we have a good research literature on how to deal 
+had several works showing us how to deal with noise in depth maps and even how to reconstruct surfaces from these kind of data. 
 
 ### Multiview images
 
@@ -115,6 +116,6 @@ vertices of the test mesh are mapped to the reference mesh.
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NzA3NzAzOCwtNTMyMTcwMTYxLC0xMT
-k4NzU2MTYxLDE0Njc5MzM2MzFdfQ==
+eyJoaXN0b3J5IjpbMTgyNzU0NjY5LC01MzIxNzAxNjEsLTExOT
+g3NTYxNjEsMTQ2NzkzMzYzMV19
 -->
