@@ -31,7 +31,7 @@ from those more related to the techniques and architectures employed in deep lea
 geometry images where 3D objects were projected into 2D grid so that the classical 2D CNNs can
 be employed."
 
-Think about data for computer graphics as 3D data is kind of unfair and doens't convey the 
+Think about data for computer graphics as 3D data is kind of unfair and doesn't convey the 
 
 
 ### RGB-D Images
@@ -113,6 +113,6 @@ vertices of the test mesh are mapped to the reference mesh.
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMjE3MDE2MSwtMTE5ODc1NjE2MSwxND
-Y3OTMzNjMxXX0=
+eyJoaXN0b3J5IjpbNTA2OTQ3NzcsLTUzMjE3MDE2MSwtMTE5OD
+c1NjE2MSwxNDY3OTMzNjMxXX0=
 -->
