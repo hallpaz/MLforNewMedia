@@ -44,7 +44,7 @@ Besides that, depth images and RGB-D data are quite easy to capture nowadays. It
 
 ### Multiview images
 
-Another way we can use images to represent 3D data is to work with a set of regular images from different viewpoints of the same object or scene. With a multi-view representation, we don't have any geometric data as we have in RGB-D, but with a sufficient amount of images we might be able to infer it. By working with multiples points of views we are able to reduce noise, incompleteness, occlusion and illumination problems on data [XX Advances...]
+Another way we can use images to represent 3D data is to work with a set of regular images from different viewpoints of the same object or scene. With a multi-view representation, we don't have any geometric data as we have in RGB-D, but with a sufficient amount of images we might be able to infer it. By working with multiples points of views we are also able to reduce noise, incompleteness, occlusion and illumination problems on data [XX Advances...]
 
 ### Voxels
 
@@ -104,7 +104,7 @@ shows 2 things
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMxMDE5MTA0LDU4ODg2MTQ2OSw0MzQzMj
-U0MzEsLTE4OTk1ODAyNDksLTUzMjE3MDE2MSwtMTE5ODc1NjE2
-MSwxNDY3OTMzNjMxXX0=
+eyJoaXN0b3J5IjpbLTEzMTg0MjIxNyw5MzEwMTkxMDQsNTg4OD
+YxNDY5LDQzNDMyNTQzMSwtMTg5OTU4MDI0OSwtNTMyMTcwMTYx
+LC0xMTk4NzU2MTYxLDE0Njc5MzM2MzFdfQ==
 -->
