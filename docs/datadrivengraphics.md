@@ -78,10 +78,6 @@ We presented some common choices for representing 3D data and there are current 
 
 Ideally we want to input the more abundant and easily available data representation such as ordinary 2D images and be able to infer the most scene/object properties as possible – such as it's geometry, topology, appearance and so on – in a useful and standard representation for new media applications. 
 
-In particular, multiview images are here "since forever" and we can avail all the progress that's been done in machine learning for computer vision and image processing
-
-
-
 
 ## Change of paradigm: AI Graphics
 
@@ -107,9 +103,9 @@ In particular, multiview images are here "since forever" and we can avail all th
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3OTgyNDAzMSwtNjgwMDQzNTA2LDczNz
-c1MzM3NSw4Mzk0MDMzMCwzNTc5MjcwMDUsLTEzMTQzMDM1MDQs
-LTEzMTg0MjIxNyw5MzEwMTkxMDQsNTg4ODYxNDY5LDQzNDMyNT
-QzMSwtMTg5OTU4MDI0OSwtNTMyMTcwMTYxLC0xMTk4NzU2MTYx
-LDE0Njc5MzM2MzFdfQ==
+eyJoaXN0b3J5IjpbLTEwODc2MDIzMDcsLTY3OTgyNDAzMSwtNj
+gwMDQzNTA2LDczNzc1MzM3NSw4Mzk0MDMzMCwzNTc5MjcwMDUs
+LTEzMTQzMDM1MDQsLTEzMTg0MjIxNyw5MzEwMTkxMDQsNTg4OD
+YxNDY5LDQzNDMyNTQzMSwtMTg5OTU4MDI0OSwtNTMyMTcwMTYx
+LC0xMTk4NzU2MTYxLDE0Njc5MzM2MzFdfQ==
 -->
