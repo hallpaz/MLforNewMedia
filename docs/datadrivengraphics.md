@@ -55,7 +55,7 @@ The simplicity of this representation comes at the cost of a high memory footpri
 
 ### Point Clouds
 
-A point cloud is a set of data points in space. 
+A point cloud is a set of data points in space with no specific order. We can establish a system of reference 
 
 By sampling points over surfaces
 
@@ -113,8 +113,8 @@ shows 2 things
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU3OTI3MDA1LC0xMzE0MzAzNTA0LC0xMz
-E4NDIyMTcsOTMxMDE5MTA0LDU4ODg2MTQ2OSw0MzQzMjU0MzEs
-LTE4OTk1ODAyNDksLTUzMjE3MDE2MSwtMTE5ODc1NjE2MSwxND
-Y3OTMzNjMxXX0=
+eyJoaXN0b3J5IjpbMTI2NjI2MzU2MSwzNTc5MjcwMDUsLTEzMT
+QzMDM1MDQsLTEzMTg0MjIxNyw5MzEwMTkxMDQsNTg4ODYxNDY5
+LDQzNDMyNTQzMSwtMTg5OTU4MDI0OSwtNTMyMTcwMTYxLC0xMT
+k4NzU2MTYxLDE0Njc5MzM2MzFdfQ==
 -->
