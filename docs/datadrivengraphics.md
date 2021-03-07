@@ -57,7 +57,7 @@ The simplicity of this representation comes at the cost of a high memory footpri
 
 A point cloud is a set of data points in space with no specific order. Point clouds provide us information about a surface geometry, but lack information about its topology.  It's a common output of scanning processes and for that it has a low cost of aqucitions 
 
-The unordered structure of a point cloud is a challenge for learning tasks as we must derive permutation invariant methods. PointNet was the first architecture to make a direct use of point clouds as input and successfully encode this kind
+The unordered structure of a point cloud is a challenge for learning tasks as we must derive permutation invariant methods. PointNet was the first architecture to make a direct use of point clouds as input and successfully encode this kind of data generating robust features for classification and segmentation tasks.
 
  We can establish a system of reference .... understand 
 
@@ -67,11 +67,6 @@ By sampling points over surfaces
 
 output of scanning processes.
 
-
-"PointNet [99] is the pioneer in making a direct use oft he point cloud as an input where each ofits
-points is represented using the (x,y, z) coordinates. As a pre-processing step, feature transformation and inputs are feeded into the PointNet architecture. 
-
- comes the RNNmodule which learns the point cloud like a sequential signal ofpoints and while training this model with some randomly permuted sequence, this RNN becomes invariant to the sequence ofthe input order ofthe point cloud’s point. Lastly, the network aggregates all the resulted point features using the max-pooling operation which is also permutation invariant. PointNet proved that it is robust against partial data and input perturbation. It was tested on classification and segmentation tasks where it proved to produce results comparable to the state-of-the-art as shown the supplementary material, Table 1."
 
 
 
@@ -116,7 +111,7 @@ shows 2 things
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1ODY2MjI3MSw3Mzc3NTMzNzUsODM5ND
+eyJoaXN0b3J5IjpbLTM5MTI0MzExNCw3Mzc3NTMzNzUsODM5ND
 AzMzAsMzU3OTI3MDA1LC0xMzE0MzAzNTA0LC0xMzE4NDIyMTcs
 OTMxMDE5MTA0LDU4ODg2MTQ2OSw0MzQzMjU0MzEsLTE4OTk1OD
 AyNDksLTUzMjE3MDE2MSwtMTE5ODc1NjE2MSwxNDY3OTMzNjMx
