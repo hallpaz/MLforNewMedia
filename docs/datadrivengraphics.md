@@ -48,7 +48,15 @@ Another way we can use images to represent 3D data is to work with a set of regu
 
 ### Voxels
 
-Voxels are a natural extension to 3D of the ideia of a 2D pixel ideia
+Voxels are a natural extension to 3D of the ideia of a 2D pixel. It's a way to encode volumetric data in a regular grid in the three-dimensional space.
+
+Volumetric data. 3D data can be characterized as a regular grid in the three-dimensional
+space. Voxels are used to model 3D data by describing how the 3D object is distributed through the three-dimensions of the scene. Viewpoint information about the 3D shape can be encoded as well by classifying the occupied voxels into visible, occluded or self-occluded. 
+
+Despite the simplicity of the voxel-based representation and its ability to encode information about the 3D shape, and its viewpoint, it suffers from some constraining limitations [144]. 
+
+Voxel-based representation is not always efficient because it represents both occupied and non-occupied parts of the scene, which establishes an enormous unnecessary need for memory storage. That is why voxel-based representation is not suitable for representing high-resolution data [1, 130]. A more efficient 3D volumetric representation is octree-based [130], which is simply varying-
+sized voxels. Octree representation models 3D objects as a hierarchical data structure that models occupancy of the 3D object in the 3D scene [38] as shown in Fig. 1. Octree representation is based on recursive decomposition of the root voxels similar to the quadtree structure [1, 110]. The tree
 
 - natural extension of a pixel to 3D
 
@@ -117,6 +125,6 @@ vertices of the test mesh are mapped to the reference mesh.
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODgxMDc2NTcsLTE4OTk1ODAyNDksLT
-UzMjE3MDE2MSwtMTE5ODc1NjE2MSwxNDY3OTMzNjMxXX0=
+eyJoaXN0b3J5IjpbMTAyODI5MDA5MywtMTg5OTU4MDI0OSwtNT
+MyMTcwMTYxLC0xMTk4NzU2MTYxLDE0Njc5MzM2MzFdfQ==
 -->
