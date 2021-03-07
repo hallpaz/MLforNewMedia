@@ -50,14 +50,8 @@ Another way we can use images to represent 3D data is to work with a set of regu
 
 Voxels are a natural extension to 3D of the ideia of a 2D pixel. It's a way to encode volumetric data in a regular grid in the three-dimensional space by describing which cells are occupied and which are not. We can extend this representation to encode, for instance, viewpoint information by classifying the occupied cells into visible, occluded or self-occluded. 
 
-The simplicity of this representation comes at the cost of a high memory footprint as we have to store data for both occupied and unoccupied voxels. By using a hierarchical data structure such as an octree, we can have varying-sized voxels and use less memory to represent unoccupied space or low detailed 
+The simplicity of this representation comes at the cost of a high memory footprint as we have to store data for both occupied and unoccupied voxels. By using a hierarchical data structure such as an octree, we can have varying-sized voxels and use less memory to represent unoccupied space or low detailed . 
 
-Despite the simplicity of the voxel-based representation and its ability to encode information about the 3D shape, and its viewpoint, it suffers from some constraining limitations [144]. 
-
-Voxel-based representation is not always efficient because it represents both occupied and non-occupied parts of the scene, which establishes an enormous unnecessary need for memory storage. That is why voxel-based representation is not suitable for representing high-resolution data [1, 130]. A more efficient 3D volumetric representation is octree-based [130], which is simply varying-
-sized voxels. Octree representation models 3D objects as a hierarchical data structure that models occupancy of the 3D object in the 3D scene [38] as shown in Fig. 1. Octree representation is based on recursive decomposition of the root voxels similar to the quadtree structure [1, 110]. The tree
-
-- natural extension of a pixel to 3D
 
 ### Point Clouds
 
@@ -107,24 +101,10 @@ shows 2 things
 
 
 
-
-
-# Tasks
-
-* 3D Recognition | Classification
-* 3D Retrieval
-* 3D Correspondence
-
-The goal of3D correspondence is to predict the mapping between a set
-ofvertices ofa test mesh and a reference or template mesh. There are two types of correspondences;
-sparse and dense correspondence. Sparse correspondence means that only a subset of the vertices
-of the test mesh are mapped to the reference mesh. However, in dense correspondence, all the
-vertices of the test mesh are mapped to the reference mesh.
-
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNzk4Mzk1NSw1ODg4NjE0NjksNDM0Mz
-I1NDMxLC0xODk5NTgwMjQ5LC01MzIxNzAxNjEsLTExOTg3NTYx
-NjEsMTQ2NzkzMzYzMV19
+eyJoaXN0b3J5IjpbOTMxMDE5MTA0LDU4ODg2MTQ2OSw0MzQzMj
+U0MzEsLTE4OTk1ODAyNDksLTUzMjE3MDE2MSwtMTE5ODc1NjE2
+MSwxNDY3OTMzNjMxXX0=
 -->
