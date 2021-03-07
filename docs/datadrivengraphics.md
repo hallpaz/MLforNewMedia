@@ -57,7 +57,7 @@ The simplicity of this representation comes at the cost of a high memory footpri
 
 A point cloud is a set of data points in space with no specific order. Point clouds provide us information about a surface geometry, but lack information about its topology.  It's a common output of scanning processes and for that it has a low cost of aqucitions 
 
-The unordered structure of a point cloud is a challenge for learning tasks as we must derive permutation invariant methods. PointNet was the first architecture to make a direct use of point clouds as input and successfully encode this kind of data generating robust features for classification and segmentation tasks.
+The unordered structure of a point cloud is a challenge for learning tasks as we must derive permutation invariant methods. PointNet was the first architecture to make a direct use of point clouds as input and successfully encode this kind of data generating robust features for classification and segmentation tasks. This made PointNet based encoder
 
  We can establish a system of reference .... understand 
 
@@ -111,7 +111,7 @@ shows 2 things
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MTI0MzExNCw3Mzc3NTMzNzUsODM5ND
+eyJoaXN0b3J5IjpbLTcxMTQ2NDE0MSw3Mzc3NTMzNzUsODM5ND
 AzMzAsMzU3OTI3MDA1LC0xMzE0MzAzNTA0LC0xMzE4NDIyMTcs
 OTMxMDE5MTA0LDU4ODg2MTQ2OSw0MzQzMjU0MzEsLTE4OTk1OD
 AyNDksLTUzMjE3MDE2MSwtMTE5ODc1NjE2MSwxNDY3OTMzNjMx
