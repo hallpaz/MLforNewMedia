@@ -4,6 +4,17 @@ title: Tools for AI Graphics
 nav_order: 2
 ---
 
+# Tasks
+
+* 3D Recognition | Classification
+* 3D Retrieval
+* 3D Correspondence
+
+The goal of3D correspondence is to predict the mapping between a set
+ofvertices ofa test mesh and a reference or template mesh. There are two types of correspondences;
+sparse and dense correspondence. Sparse correspondence means that only a subset of the vertices
+of the test mesh are mapped to the reference mesh. However, in dense correspondence, all the
+vertices of the test mesh are mapped to the reference mesh.
 
 # TOOLs
 
@@ -28,5 +39,5 @@ is a static dataset which has 100 subjects (56 female and 44 male) of different 
 We need tools 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NTI4MzI2M119
+eyJoaXN0b3J5IjpbMjEyNzIwNTQ0NF19
 -->
