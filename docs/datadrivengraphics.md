@@ -61,19 +61,6 @@ The unordered structure of a point cloud is a challenge for learning tasks as we
 
  We can establish a system of reference .... understand 
 
-
-
-By sampling points over surfaces
-
-output of scanning processes.
-3D scanners ...
-
-All of these are representations related to ours sensors (camera, LiDar etc) so it's easier to get the data.
-
-In particular, multiview images are here "since forever" and we can avail all the progress that's been done in machine learning for computer vision and image processing
-
-"As noticed in all the previously proposed methods, the main problem in processing point clouds is the un-ordered structure of this representation where researchers are trying to make the learning process invariant to the order of the point cloud. Most of these methods resorted to clustering techniques to opt for similar points and process them together."
-
 ### Polygonal Mesh
 
 - standard for many applications in computer graphics, specially visual media.
@@ -85,7 +72,16 @@ In particular, multiview images are here "since forever" and we can avail all th
 - compact
 - huge advances recently 
 
-### These representations are not exaustive...
+### These representations are not exhaustive
+
+We cited some common choices for representing 3D data By sampling points over surfaces
+
+output of scanning processes.
+3D scanners ...
+
+All of these are representations related to ours sensors (camera, LiDar etc) so it's easier to get the data.
+
+In particular, multiview images are here "since forever" and we can avail all the progress that's been done in machine learning for computer vision and image processing
 
 Ideally we want to input the more abundant and easily available data representation such as ordinary images and be able to infer/reconstruct the most a maior quantidade possível of scene/object properties such as it's geometry, topology, appearance and so on, in a useful and standard representation for new media applications.
 
@@ -100,15 +96,23 @@ shows 2 things
 - change of paradigm
 - application of classical ideias still holds
 
+By sampling points over surfaces
+
+output of scanning processes.
+3D scanners ...
+
+All of these are representations related to ours sensors (camera, LiDar etc) so it's easier to get the data.
+
+In particular, multiview images are here "since forever" and we can avail all the progress that's been done in machine learning for computer vision and image processing
 
 
 
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MzU1MTI3LDczNzc1MzM3NSw4Mzk0MD
-MzMCwzNTc5MjcwMDUsLTEzMTQzMDM1MDQsLTEzMTg0MjIxNyw5
-MzEwMTkxMDQsNTg4ODYxNDY5LDQzNDMyNTQzMSwtMTg5OTU4MD
-I0OSwtNTMyMTcwMTYxLC0xMTk4NzU2MTYxLDE0Njc5MzM2MzFd
-fQ==
+eyJoaXN0b3J5IjpbLTU0OTkwOTU0Nyw3Mzc3NTMzNzUsODM5ND
+AzMzAsMzU3OTI3MDA1LC0xMzE0MzAzNTA0LC0xMzE4NDIyMTcs
+OTMxMDE5MTA0LDU4ODg2MTQ2OSw0MzQzMjU0MzEsLTE4OTk1OD
+AyNDksLTUzMjE3MDE2MSwtMTE5ODc1NjE2MSwxNDY3OTMzNjMx
+XX0=
 -->
