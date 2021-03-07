@@ -55,9 +55,9 @@ The simplicity of this representation comes at the cost of a high memory footpri
 
 ### Point Clouds
 
-A point cloud is a set of data points in space with no specific order. It's a common output of scanning processes a
+A point cloud is a set of data points in space with no specific order. It's a common output of scanning processes and could be retrie
 
-The unordered structure is a challenge for learning tasks as we must derive permutatin invariant methods. PointNet 
+The unordered structure is a challenge for learning tasks as we must derive permutatin invariant methods. PointNet was the first architecture to 
 
  We can establish a system of reference .... understand 
 
@@ -116,9 +116,9 @@ shows 2 things
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzODM1ODU0OSw3Mzc3NTMzNzUsODM5ND
-AzMzAsMzU3OTI3MDA1LC0xMzE0MzAzNTA0LC0xMzE4NDIyMTcs
-OTMxMDE5MTA0LDU4ODg2MTQ2OSw0MzQzMjU0MzEsLTE4OTk1OD
-AyNDksLTUzMjE3MDE2MSwtMTE5ODc1NjE2MSwxNDY3OTMzNjMx
-XX0=
+eyJoaXN0b3J5IjpbLTIwMjAxMzcyNTAsNzM3NzUzMzc1LDgzOT
+QwMzMwLDM1NzkyNzAwNSwtMTMxNDMwMzUwNCwtMTMxODQyMjE3
+LDkzMTAxOTEwNCw1ODg4NjE0NjksNDM0MzI1NDMxLC0xODk5NT
+gwMjQ5LC01MzIxNzAxNjEsLTExOTg3NTYxNjEsMTQ2NzkzMzYz
+MV19
 -->
