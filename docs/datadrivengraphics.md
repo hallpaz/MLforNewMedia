@@ -50,7 +50,7 @@ Another way we can use images to represent 3D data is to work with a set of regu
 
 Voxels are a natural extension to 3D of the ideia of a 2D pixel. It's a way to encode volumetric data in a regular grid in the three-dimensional space by describing which cells are occupied and which are not. We can extend this representation to encode, for instance, viewpoint information by classifying the occupied cells into visible, occluded or self-occluded. 
 
-The simplicity of this representation comes at the cost of a high memory footprint as we have to store data for both occupied and unoccupied voxels. By using a hierarchical data structure such as an octree, we can have varying-sized voxels and use less memory to represent unoccupied space and low
+The simplicity of this representation comes at the cost of a high memory footprint as we have to store data for both occupied and unoccupied voxels. By using a hierarchical data structure such as an octree, we can have varying-sized voxels and use less memory to represent unoccupied space and low 
 
 Despite the simplicity of the voxel-based representation and its ability to encode information about the 3D shape, and its viewpoint, it suffers from some constraining limitations [144]. 
 
@@ -124,7 +124,7 @@ vertices of the test mesh are mapped to the reference mesh.
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNTg4NzA5LDU4ODg2MTQ2OSw0MzQzMj
-U0MzEsLTE4OTk1ODAyNDksLTUzMjE3MDE2MSwtMTE5ODc1NjE2
-MSwxNDY3OTMzNjMxXX0=
+eyJoaXN0b3J5IjpbLTIwMjI1NDI0NjksNTg4ODYxNDY5LDQzND
+MyNTQzMSwtMTg5OTU4MDI0OSwtNTMyMTcwMTYxLC0xMTk4NzU2
+MTYxLDE0Njc5MzM2MzFdfQ==
 -->
