@@ -48,6 +48,8 @@ Another way we can use images to represent 3D data is to work with a set of regu
 
 ### Voxels
 
+Voxels are a natural extension to 3D of the ideia of a 2D pixel ideia
+
 - natural extension of a pixel to 3D
 
 ### Point Clouds
@@ -115,6 +117,6 @@ vertices of the test mesh are mapped to the reference mesh.
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTk1ODAyNDksLTUzMjE3MDE2MSwtMT
-E5ODc1NjE2MSwxNDY3OTMzNjMxXX0=
+eyJoaXN0b3J5IjpbLTE1ODgxMDc2NTcsLTE4OTk1ODAyNDksLT
+UzMjE3MDE2MSwtMTE5ODc1NjE2MSwxNDY3OTMzNjMxXX0=
 -->
