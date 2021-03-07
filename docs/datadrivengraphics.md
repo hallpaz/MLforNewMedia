@@ -58,7 +58,7 @@ The simplicity of this representation comes at the cost of a high memory footpri
 "Point clouds can be seen as a Euclidean-structured data locally when considering a point with respect to its neighborhood (a subset of points) such that the interaction among the points forms a Euclidean space with a distance metric which is invariant to transformations like translation, rotation. However, considering the global structure ofthe point cloud, it is an unordered set of points with no specific order which imposes the irregular non-Euclidean nature on the global structure of the data."
 
 
-"PointNet [99] is the pioneer in making a direct use ofthe point cloud as an input where each ofits
+"PointNet [99] is the pioneer in making a direct use oft he point cloud as an input where each ofits
 points is represented using the (x,y, z) coordinates. As a pre-processing step, feature transformation and inputs are feeded into the PointNet architecture. PointNet is composed of three main modules: a “Spatial Transformer Network (STN)" module, an RNN module and a simple symmetric function that aggregates all the information from each point in the point cloud. The STN canonicalizes the data before feeding them to the RNN, i.e., process all the data into one canonical form, and learns the key points of the point cloud which approximately corresponds to the skeleton of the 3D object. Then comes the RNNmodule which learns the point cloud like a sequential signal ofpoints and while training this model with some randomly permuted sequence, this RNN becomes invariant to the sequence ofthe input order ofthe point cloud’s point. Lastly, the network aggregates all the resulted point features using the max-pooling operation which is also permutation invariant. PointNet proved that it is robust against partial data and input perturbation. It was tested on classification and segmentation tasks where it proved to produce results comparable to the state-of-the-art as shown the supplementary material, Table 1."
 
 
@@ -104,7 +104,7 @@ shows 2 things
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTg0MjIxNyw5MzEwMTkxMDQsNTg4OD
-YxNDY5LDQzNDMyNTQzMSwtMTg5OTU4MDI0OSwtNTMyMTcwMTYx
-LC0xMTk4NzU2MTYxLDE0Njc5MzM2MzFdfQ==
+eyJoaXN0b3J5IjpbNjY4ODMzNDYzLC0xMzE4NDIyMTcsOTMxMD
+E5MTA0LDU4ODg2MTQ2OSw0MzQzMjU0MzEsLTE4OTk1ODAyNDks
+LTUzMjE3MDE2MSwtMTE5ODc1NjE2MSwxNDY3OTMzNjMxXX0=
 -->
