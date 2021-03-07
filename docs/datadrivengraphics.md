@@ -74,7 +74,9 @@ The unordered structure of a point cloud is a challenge for learning tasks as we
 
 ### These representations are not exhaustive
 
-We presented some common choices for representing 3D data and there are current efforts and advances being made in each of these directions. Some representations are mode related to ours sensors (camera, LiDAr
+We presented some common choices for representing 3D data and there are current efforts and advances being made in each of these directions. Some representations are mode related to ours sensors, so they are easier to capture, but on the other hand other representations are more 
+
+(camera, LiDAr
 
 By sampling points over surfaces
 
@@ -112,7 +114,7 @@ In particular, multiview images are here "since forever" and we can avail all th
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODE3ODE4ODUsNzM3NzUzMzc1LDgzOT
+eyJoaXN0b3J5IjpbLTE2ODQyMTA4MjYsNzM3NzUzMzc1LDgzOT
 QwMzMwLDM1NzkyNzAwNSwtMTMxNDMwMzUwNCwtMTMxODQyMjE3
 LDkzMTAxOTEwNCw1ODg4NjE0NjksNDM0MzI1NDMxLC0xODk5NT
 gwMjQ5LC01MzIxNzAxNjEsLTExOTg3NTYxNjEsMTQ2NzkzMzYz
