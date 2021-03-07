@@ -48,7 +48,7 @@ Another way we can use images to represent 3D data is to work with a set of regu
 
 ### Voxels
 
-Voxels are a natural extension to 3D of the ideia of a 2D pixel. It's a way to encode volumetric data in a regular grid in the three-dimensional space by describing which cells are occupied and which are not. 
+Voxels are a natural extension to 3D of the ideia of a 2D pixel. It's a way to encode volumetric data in a regular grid in the three-dimensional space by describing which cells are occupied and which are not. We can extend this representation to encode, for instance, viewpoint information by classif
 
 Viewpoint information about the 3D shape can be encoded as well by classifying the occupied voxels into visible, occluded or self-occluded. 
 
@@ -125,6 +125,6 @@ vertices of the test mesh are mapped to the reference mesh.
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MTA4MTMxMywtMTg5OTU4MDI0OSwtNT
+eyJoaXN0b3J5IjpbMTM5OTE3NTA3OCwtMTg5OTU4MDI0OSwtNT
 MyMTcwMTYxLC0xMTk4NzU2MTYxLDE0Njc5MzM2MzFdfQ==
 -->
