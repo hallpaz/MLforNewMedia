@@ -57,7 +57,9 @@ The simplicity of this representation comes at the cost of a high memory footpri
 
 A point cloud is a set of data points in space with no specific order. It's a common output of scanning processes a
 
- We can establish a system of reference .... understand Point clouds provide us surface geometry, but we have no information about its topology.
+ We can establish a system of reference .... understand 
+
+Point clouds provide us information about a surface geometry, but we have no information about its topology.
 
 By sampling points over surfaces
 
@@ -115,8 +117,8 @@ shows 2 things
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMTAyMTEwOSw4Mzk0MDMzMCwzNTc5Mj
-cwMDUsLTEzMTQzMDM1MDQsLTEzMTg0MjIxNyw5MzEwMTkxMDQs
-NTg4ODYxNDY5LDQzNDMyNTQzMSwtMTg5OTU4MDI0OSwtNTMyMT
-cwMTYxLC0xMTk4NzU2MTYxLDE0Njc5MzM2MzFdfQ==
+eyJoaXN0b3J5IjpbNzM3NzUzMzc1LDgzOTQwMzMwLDM1NzkyNz
+AwNSwtMTMxNDMwMzUwNCwtMTMxODQyMjE3LDkzMTAxOTEwNCw1
+ODg4NjE0NjksNDM0MzI1NDMxLC0xODk5NTgwMjQ5LC01MzIxNz
+AxNjEsLTExOTg3NTYxNjEsMTQ2NzkzMzYzMV19
 -->
