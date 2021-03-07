@@ -55,6 +55,8 @@ The simplicity of this representation comes at the cost of a high memory footpri
 
 ### Point Clouds
 
+A point cloud is just a set of data points in space.
+
 
 "Point clouds can be seen as a Euclidean-structured data locally when considering a point with respect to its neighborhood (a subset of points) such that the interaction among the points forms a Euclidean space with a distance metric which is invariant to transformations like translation, rotation. However, considering the global structure ofthe point cloud, it is an unordered set of points with no specific order which imposes the irregular non-Euclidean nature on the global structure of the data."
 
@@ -107,7 +109,7 @@ shows 2 things
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTQ0NzcxMjQsLTEzMTg0MjIxNyw5Mz
+eyJoaXN0b3J5IjpbLTEzMTQzMDM1MDQsLTEzMTg0MjIxNyw5Mz
 EwMTkxMDQsNTg4ODYxNDY5LDQzNDMyNTQzMSwtMTg5OTU4MDI0
 OSwtNTMyMTcwMTYxLC0xMTk4NzU2MTYxLDE0Njc5MzM2MzFdfQ
 ==
