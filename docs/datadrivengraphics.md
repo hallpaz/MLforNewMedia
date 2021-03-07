@@ -55,13 +55,16 @@ The simplicity of this representation comes at the cost of a high memory footpri
 
 ### Point Clouds
 
-A point cloud is a set of data points in space with no specific order. It's a common output of scanning processes and could be retrie
+A point cloud is a set of data points in space with no specific order. Point clouds provide us information about a surface geometry, but lack have no information about its topology.
+
+
+It's a common output of scanning processes and could be retrieved from depthi
 
 The unordered structure is a challenge for learning tasks as we must derive permutatin invariant methods. PointNet was the first architecture to 
 
  We can establish a system of reference .... understand 
 
-Point clouds provide us information about a surface geometry, but we have no information about its topology.
+
 
 By sampling points over surfaces
 
@@ -116,7 +119,7 @@ shows 2 things
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjAxMzcyNTAsNzM3NzUzMzc1LDgzOT
+eyJoaXN0b3J5IjpbLTE3NDU0MTQ2NDQsNzM3NzUzMzc1LDgzOT
 QwMzMwLDM1NzkyNzAwNSwtMTMxNDMwMzUwNCwtMTMxODQyMjE3
 LDkzMTAxOTEwNCw1ODg4NjE0NjksNDM0MzI1NDMxLC0xODk5NT
 gwMjQ5LC01MzIxNzAxNjEsLTExOTg3NTYxNjEsMTQ2NzkzMzYz
