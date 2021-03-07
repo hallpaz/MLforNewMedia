@@ -74,20 +74,13 @@ The unordered structure of a point cloud is a challenge for learning tasks as we
 
 ### These representations are not exhaustive
 
-We presented some common choices for representing 3D data and there are current efforts and advances being made in each of these directions. Some representations are mode related to ours sensors, so they are easier to capture, but on the other hand other representations are more suitable for 3D computer graphics tasks and applications for *new medias* such as real time rendering, artistic modeling or automated assets generation.
+We presented some common choices for representing 3D data and there are current efforts and advances being made in each of these directions. Some representations are mode related to ours sensors, so they are easier to capture, but on the other hand other representations are more suitable for 3D computer graphics tasks and applications for *new medias* such as real time rendering, artistic modeling or automated assets generation. 
 
-(camera, LiDAr
-
-By sampling points over surfaces
-
-output of scanning processes.
-3D scanners ...
-
-All of these are representations related to  (camera, LiDar etc) so it's easier to get the data.
+Ideally we want to input the more abundant and easily available data representation such as ordinary images and be able to infer/reconstruct the most a maior quantidade possível of scene/object properties such as it's geometry, topology, appearance and so on, in a useful and standard representation for new media applications.
 
 In particular, multiview images are here "since forever" and we can avail all the progress that's been done in machine learning for computer vision and image processing
 
-Ideally we want to input the more abundant and easily available data representation such as ordinary images and be able to infer/reconstruct the most a maior quantidade possível of scene/object properties such as it's geometry, topology, appearance and so on, in a useful and standard representation for new media applications.
+
 
 
 ## Change of paradigm: AI Graphics
@@ -114,9 +107,9 @@ In particular, multiview images are here "since forever" and we can avail all th
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzE5MDE2NjUsNzM3NzUzMzc1LDgzOT
-QwMzMwLDM1NzkyNzAwNSwtMTMxNDMwMzUwNCwtMTMxODQyMjE3
-LDkzMTAxOTEwNCw1ODg4NjE0NjksNDM0MzI1NDMxLC0xODk5NT
-gwMjQ5LC01MzIxNzAxNjEsLTExOTg3NTYxNjEsMTQ2NzkzMzYz
-MV19
+eyJoaXN0b3J5IjpbLTY4MDA0MzUwNiw3Mzc3NTMzNzUsODM5ND
+AzMzAsMzU3OTI3MDA1LC0xMzE0MzAzNTA0LC0xMzE4NDIyMTcs
+OTMxMDE5MTA0LDU4ODg2MTQ2OSw0MzQzMjU0MzEsLTE4OTk1OD
+AyNDksLTUzMjE3MDE2MSwtMTE5ODc1NjE2MSwxNDY3OTMzNjMx
+XX0=
 -->
