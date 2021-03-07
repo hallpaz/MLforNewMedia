@@ -57,6 +57,8 @@ The simplicity of this representation comes at the cost of a high memory footpri
 
 A point cloud is a set of data points in space with no specific order. It's a common output of scanning processes a
 
+The unordered structure is a challenge for learning tasks as we must derive permutatin invariant methods. PointNet 
+
  We can establish a system of reference .... understand 
 
 Point clouds provide us information about a surface geometry, but we have no information about its topology.
@@ -64,9 +66,6 @@ Point clouds provide us information about a surface geometry, but we have no inf
 By sampling points over surfaces
 
 output of scanning processes.
-
-
-"Point clouds can be seen as a Euclidean-structured data locally when considering a point with respect to its neighborhood (a subset of points) such that the interaction among the points forms a Euclidean space with a distance metric which is invariant to transformations like translation, rotation. However, considering the global structure ofthe point cloud, it is an unordered set of points with no specific order which imposes the irregular non-Euclidean nature on the global structure of the data."
 
 
 "PointNet [99] is the pioneer in making a direct use oft he point cloud as an input where each ofits
@@ -117,8 +116,9 @@ shows 2 things
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM3NzUzMzc1LDgzOTQwMzMwLDM1NzkyNz
-AwNSwtMTMxNDMwMzUwNCwtMTMxODQyMjE3LDkzMTAxOTEwNCw1
-ODg4NjE0NjksNDM0MzI1NDMxLC0xODk5NTgwMjQ5LC01MzIxNz
-AxNjEsLTExOTg3NTYxNjEsMTQ2NzkzMzYzMV19
+eyJoaXN0b3J5IjpbLTUzODM1ODU0OSw3Mzc3NTMzNzUsODM5ND
+AzMzAsMzU3OTI3MDA1LC0xMzE0MzAzNTA0LC0xMzE4NDIyMTcs
+OTMxMDE5MTA0LDU4ODg2MTQ2OSw0MzQzMjU0MzEsLTE4OTk1OD
+AyNDksLTUzMjE3MDE2MSwtMTE5ODc1NjE2MSwxNDY3OTMzNjMx
+XX0=
 -->
