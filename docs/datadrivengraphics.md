@@ -74,7 +74,7 @@ The unordered structure of a point cloud is a challenge for learning tasks as we
 
 ### These representations are not exhaustive
 
-We cited some common choices for representing 3D data By sampling points over surfaces
+We presented some common choices for representing 3D data By sampling points over surfaces
 
 output of scanning processes.
 3D scanners ...
@@ -110,7 +110,7 @@ In particular, multiview images are here "since forever" and we can avail all th
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0OTkwOTU0Nyw3Mzc3NTMzNzUsODM5ND
+eyJoaXN0b3J5IjpbMTczMDc4ODQ4Miw3Mzc3NTMzNzUsODM5ND
 AzMzAsMzU3OTI3MDA1LC0xMzE0MzAzNTA0LC0xMzE4NDIyMTcs
 OTMxMDE5MTA0LDU4ODg2MTQ2OSw0MzQzMjU0MzEsLTE4OTk1OD
 AyNDksLTUzMjE3MDE2MSwtMTE5ODc1NjE2MSwxNDY3OTMzNjMx
