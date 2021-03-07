@@ -74,7 +74,7 @@ The unordered structure of a point cloud is a challenge for learning tasks as we
 
 ### These representations are not exhaustive
 
-We presented some common choices for representing 3D data and there are current efforts and advances being made in each of these directions. Some representations are mode related to ours sensors, so they are easier to capture, but on the other hand other representations are more suitable for 3D computer graphics tasks and applications for New Medias such as real time rendering, 
+We presented some common choices for representing 3D data and there are current efforts and advances being made in each of these directions. Some representations are mode related to ours sensors, so they are easier to capture, but on the other hand other representations are more suitable for 3D computer graphics tasks and applications for New Medias such as real time rendering, artistic modeling 
 
 (camera, LiDAr
 
@@ -114,9 +114,9 @@ In particular, multiview images are here "since forever" and we can avail all th
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjk0NTM0MTcsNzM3NzUzMzc1LDgzOT
-QwMzMwLDM1NzkyNzAwNSwtMTMxNDMwMzUwNCwtMTMxODQyMjE3
-LDkzMTAxOTEwNCw1ODg4NjE0NjksNDM0MzI1NDMxLC0xODk5NT
-gwMjQ5LC01MzIxNzAxNjEsLTExOTg3NTYxNjEsMTQ2NzkzMzYz
-MV19
+eyJoaXN0b3J5IjpbMTE0Njg5NDIwNyw3Mzc3NTMzNzUsODM5ND
+AzMzAsMzU3OTI3MDA1LC0xMzE0MzAzNTA0LC0xMzE4NDIyMTcs
+OTMxMDE5MTA0LDU4ODg2MTQ2OSw0MzQzMjU0MzEsLTE4OTk1OD
+AyNDksLTUzMjE3MDE2MSwtMTE5ODc1NjE2MSwxNDY3OTMzNjMx
+XX0=
 -->
