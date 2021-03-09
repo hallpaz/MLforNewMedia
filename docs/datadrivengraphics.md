@@ -54,7 +54,9 @@ Graph Neural Networks. This way, machine learning in polygonal meshes might bene
 
 ### Implicit functions
 
-We can also represent geometric models as an isosurface of a scalar field. This way we have a continuous representation of a surface given by an implicit function. As we are not restricted to a discrete representation
+We can also represent geometric models as an isosurface of a scalar field. This way we have a continuous representation of a surface given by an implicit function. Visualization of implicit surfaces can be computed with raytracing or
+
+As we are not restricted to a discrete representation
 
 
 Another common geometric model is the _implicit representation_, where a surface is generated as an isosurface of a _3D_ ... precisely a multiresolution representation based on a _data_ ... As the ﬁeld _function_s used by _implicit_ objects are usually
@@ -94,11 +96,11 @@ In particular, multiview images are here "since forever" and we can avail all th
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE0MTAwOTg5LDgzNTQxNzc1OCwxMTUxMD
-E0NDgwLC0xNzQzMDg2MzIwLC0xMzk1ODQ0ODg4LC0xNzA0NDE0
-NjUzLC0xMDg3NjAyMzA3LC02Nzk4MjQwMzEsLTY4MDA0MzUwNi
-w3Mzc3NTMzNzUsODM5NDAzMzAsMzU3OTI3MDA1LC0xMzE0MzAz
-NTA0LC0xMzE4NDIyMTcsOTMxMDE5MTA0LDU4ODg2MTQ2OSw0Mz
-QzMjU0MzEsLTE4OTk1ODAyNDksLTUzMjE3MDE2MSwtMTE5ODc1
-NjE2MV19
+eyJoaXN0b3J5IjpbMTQxMTE5NjU1OCw4MzU0MTc3NTgsMTE1MT
+AxNDQ4MCwtMTc0MzA4NjMyMCwtMTM5NTg0NDg4OCwtMTcwNDQx
+NDY1MywtMTA4NzYwMjMwNywtNjc5ODI0MDMxLC02ODAwNDM1MD
+YsNzM3NzUzMzc1LDgzOTQwMzMwLDM1NzkyNzAwNSwtMTMxNDMw
+MzUwNCwtMTMxODQyMjE3LDkzMTAxOTEwNCw1ODg4NjE0NjksND
+M0MzI1NDMxLC0xODk5NTgwMjQ5LC01MzIxNzAxNjEsLTExOTg3
+NTYxNjFdfQ==
 -->
