@@ -1,4 +1,9 @@
 
+---
+layout: default
+draft: true
+title: Draft - saving ideas
+---
 
 ### Descriptors and Projections
 
@@ -16,5 +21,5 @@ Think about data for computer graphics as 3D data is kind of unfair and doesn't 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMzMzY4NTNdfQ==
+eyJoaXN0b3J5IjpbMTQxNDE5ODQ5NV19
 -->
