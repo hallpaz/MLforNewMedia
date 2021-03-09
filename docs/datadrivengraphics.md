@@ -54,7 +54,7 @@ Graph Neural Networks. This way, machine learning in polygonal meshes might bene
 
 ### Implicit functions
 
-We can also represent geometric models as an isosurface of a scalar field. This way we have a continuous representation of a surface given by an implicit function. Visualization of implicit surfaces can be computed with raytracing or we can subdivide the space and extract a polygonal mesh using a method like Marching Cubes. A continuous representation has some advantages as we have arbitrary resolution at a low storage cost. As neural networks are universal approximators for continuous functions [X], we can try to parameterize 
+We can also represent geometric models as an isosurface of a scalar field. This way we have a continuous representation of a surface given by an implicit function. Visualization of implicit surfaces can be computed with raytracing or we can subdivide the space and extract a polygonal mesh using a method like Marching Cubes. A continuous representation has some advantages as we have arbitrary resolution at a low storage cost. As neural networks are universal approximators for continuous functions [X], we can try to parameterize a target scalar field by a neural network. This approach has led to incredible results in the last months and is an highly active research field.
 
 ### These representations are not exhaustive
 
@@ -87,11 +87,11 @@ In particular, multiview images are here "since forever" and we can avail all th
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM1MjkxNTIzLC0yMTE0OTQwMTkzLDgzNT
-QxNzc1OCwxMTUxMDE0NDgwLC0xNzQzMDg2MzIwLC0xMzk1ODQ0
-ODg4LC0xNzA0NDE0NjUzLC0xMDg3NjAyMzA3LC02Nzk4MjQwMz
-EsLTY4MDA0MzUwNiw3Mzc3NTMzNzUsODM5NDAzMzAsMzU3OTI3
-MDA1LC0xMzE0MzAzNTA0LC0xMzE4NDIyMTcsOTMxMDE5MTA0LD
-U4ODg2MTQ2OSw0MzQzMjU0MzEsLTE4OTk1ODAyNDksLTUzMjE3
-MDE2MV19
+eyJoaXN0b3J5IjpbLTE3NzM1ODEyNDgsOTM1MjkxNTIzLC0yMT
+E0OTQwMTkzLDgzNTQxNzc1OCwxMTUxMDE0NDgwLC0xNzQzMDg2
+MzIwLC0xMzk1ODQ0ODg4LC0xNzA0NDE0NjUzLC0xMDg3NjAyMz
+A3LC02Nzk4MjQwMzEsLTY4MDA0MzUwNiw3Mzc3NTMzNzUsODM5
+NDAzMzAsMzU3OTI3MDA1LC0xMzE0MzAzNTA0LC0xMzE4NDIyMT
+csOTMxMDE5MTA0LDU4ODg2MTQ2OSw0MzQzMjU0MzEsLTE4OTk1
+ODAyNDldfQ==
 -->
