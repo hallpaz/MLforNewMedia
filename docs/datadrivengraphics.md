@@ -58,7 +58,11 @@ We can also represent geometric models as an isosurface of a scalar field. This 
 
 ### These representations are not exhaustive
 
-We presented some common choices for representing 3D data and there are current efforts and advances being made in each of these directions. Some representations are mode related to ours sensors, so they are easier to capture, but on the other hand other representations are more suitable for 3D computer graphics tasks and applications for *new medias* such as real time rendering, artistic modeling or automated assets generation. 
+We presented some common choices for representing 3D data for machine learning in computer graphics. There are current efforts and advances being made in each of these directions. Some representations are mode related to ours sensors, so they are easier to capture, but on the other hand other representations are more suitable for 3D computer graphics tasks and applications for *new medias* such as real time rendering, artistic modeling or automated assets generation. 
+
+
+Having different 3D data representations has led researchers to pursue different DL routes to
+adapt the learning process to the data properties.
 
 Ideally we want to input the more abundant and easily available data representation such as ordinary 2D images and be able to infer the most scene/object properties as possible – such as it's geometry, topology, appearance and so on – in a useful and standard representation for new media applications. 
 
@@ -87,7 +91,7 @@ In particular, multiview images are here "since forever" and we can avail all th
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzM1ODEyNDgsOTM1MjkxNTIzLC0yMT
+eyJoaXN0b3J5IjpbLTE3NjU5NTIyMDUsOTM1MjkxNTIzLC0yMT
 E0OTQwMTkzLDgzNTQxNzc1OCwxMTUxMDE0NDgwLC0xNzQzMDg2
 MzIwLC0xMzk1ODQ0ODg4LC0xNzA0NDE0NjUzLC0xMDg3NjAyMz
 A3LC02Nzk4MjQwMzEsLTY4MDA0MzUwNiw3Mzc3NTMzNzUsODM5
