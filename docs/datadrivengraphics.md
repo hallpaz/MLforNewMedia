@@ -19,20 +19,6 @@ We start briefly describing some 3D data representations. Unlike images, which h
 
 from those more related to the techniques and architectures employed in deep learning for computer vision.
 
-### Descriptors and Projections
-
-
-"they cannot learn the discriminative features from 3D shapes."
-
-[X] describes 
-
-
-"Sinha et al. in [120] proposed
-geometry images where 3D objects were projected into 2D grid so that the classical 2D CNNs can
-be employed."
-
-Think about data for computer graphics as 3D data is kind of unfair and doesn't convey the 
-
 
 ### RGB-D Images
 
@@ -65,12 +51,11 @@ A polygonal mesh is composed of a set of vertices and a connectivity list that d
 
 It's interesting to note that a polygonal mesh can be interpreted as a graph. Graphs are data structures 
 
-Graph Neural Networks. This way, machine learning in polygonal meshes might benefit from methods being developed for learning graphs in other domains. 
-
-- Graph Neural Networks
+Graph Neural Networks. This way, machine learning in polygonal meshes might benefit from methods being developed for learning in graphs of other domains.
 
 ### Implicit functions
 
+All representations we saw so far 
 - continuous
 - compact
 - huge advances recently 
@@ -106,7 +91,7 @@ In particular, multiview images are here "since forever" and we can avail all th
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU0Mjg0Nzg0LC0xNzQzMDg2MzIwLC0xMz
+eyJoaXN0b3J5IjpbMjA4MTk2NDMyLC0xNzQzMDg2MzIwLC0xMz
 k1ODQ0ODg4LC0xNzA0NDE0NjUzLC0xMDg3NjAyMzA3LC02Nzk4
 MjQwMzEsLTY4MDA0MzUwNiw3Mzc3NTMzNzUsODM5NDAzMzAsMz
 U3OTI3MDA1LC0xMzE0MzAzNTA0LC0xMzE4NDIyMTcsOTMxMDE5
