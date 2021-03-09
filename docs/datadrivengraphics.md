@@ -61,7 +61,7 @@ The unordered structure of a point cloud is a challenge for learning tasks as we
 
 ### Polygonal Mesh
 
-A polygonal mesh is composed of a set of vertices and a connectivity list that describes how vertices are connected to form polygons - which are called faces. Polygonal meshes are the standard representation for many applications in computer graphics, specially visual media 
+A polygonal mesh is composed of a set of vertices and a connectivity list that describes how vertices are connected to form polygons - which are called faces. Polygonal meshes are the standard representation for many applications in computer graphics, specially visual media, as 
 - standard for many applications in computer graphics, specially visual media.
 - Graph Neural Networks
 
@@ -102,10 +102,10 @@ In particular, multiview images are here "since forever" and we can avail all th
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MjM5MTg4NiwtMTcwNDQxNDY1MywtMT
-A4NzYwMjMwNywtNjc5ODI0MDMxLC02ODAwNDM1MDYsNzM3NzUz
-Mzc1LDgzOTQwMzMwLDM1NzkyNzAwNSwtMTMxNDMwMzUwNCwtMT
-MxODQyMjE3LDkzMTAxOTEwNCw1ODg4NjE0NjksNDM0MzI1NDMx
-LC0xODk5NTgwMjQ5LC01MzIxNzAxNjEsLTExOTg3NTYxNjEsMT
-Q2NzkzMzYzMV19
+eyJoaXN0b3J5IjpbLTEzOTU4NDQ4ODgsLTE3MDQ0MTQ2NTMsLT
+EwODc2MDIzMDcsLTY3OTgyNDAzMSwtNjgwMDQzNTA2LDczNzc1
+MzM3NSw4Mzk0MDMzMCwzNTc5MjcwMDUsLTEzMTQzMDM1MDQsLT
+EzMTg0MjIxNyw5MzEwMTkxMDQsNTg4ODYxNDY5LDQzNDMyNTQz
+MSwtMTg5OTU4MDI0OSwtNTMyMTcwMTYxLC0xMTk4NzU2MTYxLD
+E0Njc5MzM2MzFdfQ==
 -->
