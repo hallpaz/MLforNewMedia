@@ -38,7 +38,10 @@ All of these are representations related to ours sensors (camera, LiDar etc) so 
 
 In particular, multiview images are here "since forever" and we can avail all the progress that's been done in machine learning for computer vision and image processing
 
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzOTY3Njg4MV19
+eyJoaXN0b3J5IjpbLTg2OTU2MzEwOV19
 -->
