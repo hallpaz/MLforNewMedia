@@ -63,35 +63,16 @@ We presented some common choices for representing 3D data for machine learning i
 Ideally we want to input the more abundant and easily available data representation such as ordinary 2D images and be able to infer the most scene/object properties as possible – such as it's geometry, topology, appearance and so on – in a useful and standard representation for new media applications. 
 
 
-## Change of paradigm: AI Graphics
-
-The convolutional network model 
-
-We have a changed to a data driven paradigm in which our models are estimated from data.
-
-shows 2 things
-- change of paradigm
-- application of classical ideias still holds
-
-By sampling points over surfaces
-
-output of scanning processes.
-3D scanners ...
-
-All of these are representations related to ours sensors (camera, LiDar etc) so it's easier to get the data.
-
-In particular, multiview images are here "since forever" and we can avail all the progress that's been done in machine learning for computer vision and image processing
-
 
 
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MDgyNjE5NSw5MzUyOTE1MjMsLTIxMT
-Q5NDAxOTMsODM1NDE3NzU4LDExNTEwMTQ0ODAsLTE3NDMwODYz
-MjAsLTEzOTU4NDQ4ODgsLTE3MDQ0MTQ2NTMsLTEwODc2MDIzMD
-csLTY3OTgyNDAzMSwtNjgwMDQzNTA2LDczNzc1MzM3NSw4Mzk0
-MDMzMCwzNTc5MjcwMDUsLTEzMTQzMDM1MDQsLTEzMTg0MjIxNy
-w5MzEwMTkxMDQsNTg4ODYxNDY5LDQzNDMyNTQzMSwtMTg5OTU4
-MDI0OV19
+eyJoaXN0b3J5IjpbMzgxODkwNTg3LDkzNTI5MTUyMywtMjExND
+k0MDE5Myw4MzU0MTc3NTgsMTE1MTAxNDQ4MCwtMTc0MzA4NjMy
+MCwtMTM5NTg0NDg4OCwtMTcwNDQxNDY1MywtMTA4NzYwMjMwNy
+wtNjc5ODI0MDMxLC02ODAwNDM1MDYsNzM3NzUzMzc1LDgzOTQw
+MzMwLDM1NzkyNzAwNSwtMTMxNDMwMzUwNCwtMTMxODQyMjE3LD
+kzMTAxOTEwNCw1ODg4NjE0NjksNDM0MzI1NDMxLC0xODk5NTgw
+MjQ5XX0=
 -->
