@@ -58,7 +58,7 @@ We can also represent geometric models as an isosurface of a scalar field. This 
 
 ### These representations are not exhaustive
 
-We presented some common choices for representing 3D data for machine learning in computer graphics. There are current efforts and advances being made in each of these directions. Some representations are mode related to ours sensors, so they are easier to capture, but on the other hand other representations are more suitable for 3D computer graphics tasks and applications for *new medias* such as real time rendering, artistic modeling or automated assets generation. 
+We presented some common choices for representing 3D data for machine learning in computer graphics. There are current efforts and advances being made in each of these directions. Some representations are mode related to ours sensors, so they are easier to capture, on the other hand other representations are more suitable for 3D computer graphics tasks and applications for *new medias* such as real time rendering, artistic modeling or automated assets generation. 
 
 
 Having different 3D data representations has led researchers to pursue different DL routes to
@@ -91,11 +91,11 @@ In particular, multiview images are here "since forever" and we can avail all th
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjU5NTIyMDUsOTM1MjkxNTIzLC0yMT
-E0OTQwMTkzLDgzNTQxNzc1OCwxMTUxMDE0NDgwLC0xNzQzMDg2
-MzIwLC0xMzk1ODQ0ODg4LC0xNzA0NDE0NjUzLC0xMDg3NjAyMz
-A3LC02Nzk4MjQwMzEsLTY4MDA0MzUwNiw3Mzc3NTMzNzUsODM5
-NDAzMzAsMzU3OTI3MDA1LC0xMzE0MzAzNTA0LC0xMzE4NDIyMT
-csOTMxMDE5MTA0LDU4ODg2MTQ2OSw0MzQzMjU0MzEsLTE4OTk1
-ODAyNDldfQ==
+eyJoaXN0b3J5IjpbNjcyNDIyOTk0LDkzNTI5MTUyMywtMjExND
+k0MDE5Myw4MzU0MTc3NTgsMTE1MTAxNDQ4MCwtMTc0MzA4NjMy
+MCwtMTM5NTg0NDg4OCwtMTcwNDQxNDY1MywtMTA4NzYwMjMwNy
+wtNjc5ODI0MDMxLC02ODAwNDM1MDYsNzM3NzUzMzc1LDgzOTQw
+MzMwLDM1NzkyNzAwNSwtMTMxNDMwMzUwNCwtMTMxODQyMjE3LD
+kzMTAxOTEwNCw1ODg4NjE0NjksNDM0MzI1NDMxLC0xODk5NTgw
+MjQ5XX0=
 -->
