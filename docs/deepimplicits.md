@@ -6,7 +6,7 @@ nav_order: 3
 
 # Representing the World Implicitly with Neural Networks
 
-One 3D represetation we find particularly interesting is the implicit representation. It turns out that over the last year it happened an explosion of interesting works in this area, leverageing the power of neural networks to represent 3D surfaces implicitly.
+One 3D representation we find particularly interesting is the implicit representation. It turns out that over the last year it happened an explosion of interesting works in this area, leveraging the power of neural networks to represent 3D surfaces implicitly.
 
 This representation has some advantages
 
@@ -185,5 +185,5 @@ TODO: check name's spelling
 * Thales
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzI1NzA0MCwtMTUyODI1OTU3Nl19
+eyJoaXN0b3J5IjpbLTkyOTY5MTk3NywtMTUyODI1OTU3Nl19
 -->
