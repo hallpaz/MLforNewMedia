@@ -39,9 +39,19 @@ All of these are representations related to ours sensors (camera, LiDar etc) so 
 In particular, multiview images are here "since forever" and we can avail all the progress that's been done in machine learning for computer vision and image processing
 
 
+# Tasks
 
+* 3D Recognition | Classification
+* 3D Retrieval
+* 3D Correspondence
+
+The goal of3D correspondence is to predict the mapping between a set
+ofvertices ofa test mesh and a reference or template mesh. There are two types of correspondences;
+sparse and dense correspondence. Sparse correspondence means that only a subset of the vertices
+of the test mesh are mapped to the reference mesh. However, in dense correspondence, all the
+vertices of the test mesh are mapped to the reference mesh.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2OTU2MzEwOV19
+eyJoaXN0b3J5IjpbLTE4NjIxMTIyNDZdfQ==
 -->
