@@ -65,7 +65,7 @@ A polygonal mesh is composed of a set of vertices and a connectivity list that d
 
 It's interesting to note that a polygonal mesh can be interpreted as a graph. Graphs are data structures 
 
-Graph Neural Networks. So a polygonal
+Graph Neural Networks. This way, machine learning in polygonal meshes might benefit from methods being developed for learning graphs in other domains. 
 
 - Graph Neural Networks
 
@@ -106,10 +106,10 @@ In particular, multiview images are here "since forever" and we can avail all th
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMzc4NDQ5MiwtMTc0MzA4NjMyMCwtMT
-M5NTg0NDg4OCwtMTcwNDQxNDY1MywtMTA4NzYwMjMwNywtNjc5
-ODI0MDMxLC02ODAwNDM1MDYsNzM3NzUzMzc1LDgzOTQwMzMwLD
-M1NzkyNzAwNSwtMTMxNDMwMzUwNCwtMTMxODQyMjE3LDkzMTAx
-OTEwNCw1ODg4NjE0NjksNDM0MzI1NDMxLC0xODk5NTgwMjQ5LC
-01MzIxNzAxNjEsLTExOTg3NTYxNjEsMTQ2NzkzMzYzMV19
+eyJoaXN0b3J5IjpbNDU0Mjg0Nzg0LC0xNzQzMDg2MzIwLC0xMz
+k1ODQ0ODg4LC0xNzA0NDE0NjUzLC0xMDg3NjAyMzA3LC02Nzk4
+MjQwMzEsLTY4MDA0MzUwNiw3Mzc3NTMzNzUsODM5NDAzMzAsMz
+U3OTI3MDA1LC0xMzE0MzAzNTA0LC0xMzE4NDIyMTcsOTMxMDE5
+MTA0LDU4ODg2MTQ2OSw0MzQzMjU0MzEsLTE4OTk1ODAyNDksLT
+UzMjE3MDE2MSwtMTE5ODc1NjE2MSwxNDY3OTMzNjMxXX0=
 -->
