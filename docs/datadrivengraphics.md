@@ -56,8 +56,6 @@ Graph Neural Networks. This way, machine learning in polygonal meshes might bene
 
 We can also represent geometric models as an isosurface of a scalar field. This way we have a continuous representation of a surface given by an implicit function. Visualization of implicit surfaces can be computed with raytracing or we can subdivide the space and extract a polygonal mesh using a method like Marching Cubes. A continuous representation has some advantages as we have arbitrary resolution at a low storage cost. As neural networks are universal approximators for continuous functions [X], we can try to parameterize 
 
-_neural networks_  that  _parameterize_  such  _implicitly_  defined  _functions_  as  _implicit_  neural representations. 23. As we show in this paper, a surprisingly wide variety of ...
-
 ### These representations are not exhaustive
 
 We presented some common choices for representing 3D data and there are current efforts and advances being made in each of these directions. Some representations are mode related to ours sensors, so they are easier to capture, but on the other hand other representations are more suitable for 3D computer graphics tasks and applications for *new medias* such as real time rendering, artistic modeling or automated assets generation. 
@@ -89,11 +87,11 @@ In particular, multiview images are here "since forever" and we can avail all th
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTQ5NDAxOTMsODM1NDE3NzU4LDExNT
-EwMTQ0ODAsLTE3NDMwODYzMjAsLTEzOTU4NDQ4ODgsLTE3MDQ0
-MTQ2NTMsLTEwODc2MDIzMDcsLTY3OTgyNDAzMSwtNjgwMDQzNT
-A2LDczNzc1MzM3NSw4Mzk0MDMzMCwzNTc5MjcwMDUsLTEzMTQz
-MDM1MDQsLTEzMTg0MjIxNyw5MzEwMTkxMDQsNTg4ODYxNDY5LD
-QzNDMyNTQzMSwtMTg5OTU4MDI0OSwtNTMyMTcwMTYxLC0xMTk4
-NzU2MTYxXX0=
+eyJoaXN0b3J5IjpbOTM1MjkxNTIzLC0yMTE0OTQwMTkzLDgzNT
+QxNzc1OCwxMTUxMDE0NDgwLC0xNzQzMDg2MzIwLC0xMzk1ODQ0
+ODg4LC0xNzA0NDE0NjUzLC0xMDg3NjAyMzA3LC02Nzk4MjQwMz
+EsLTY4MDA0MzUwNiw3Mzc3NTMzNzUsODM5NDAzMzAsMzU3OTI3
+MDA1LC0xMzE0MzAzNTA0LC0xMzE4NDIyMTcsOTMxMDE5MTA0LD
+U4ODg2MTQ2OSw0MzQzMjU0MzEsLTE4OTk1ODAyNDksLTUzMjE3
+MDE2MV19
 -->
