@@ -7,3 +7,11 @@ nav_order: 4
 # Learning about the "Real" World by Building a Synthetic One
 
 => TODO
+
+- Why?
+- Challenges
+- Infrastructure
+- Applications
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTU4MTgxMDgyMl19
+-->
