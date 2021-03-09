@@ -60,7 +60,7 @@ We can also represent geometric models as an isosurface of a scalar field. This 
 
 We presented some common choices for representing 3D data for machine learning in computer graphics. There are current efforts and advances being made in each of these directions. Some representations are mode related to ours sensors, so they are easier to capture, on the other hand other representations are more suitable for 3D computer graphics tasks and applications for *new medias* such as real time rendering, artistic modeling or automated assets generation. 
 
-Ideally we want to input the more abundant and easily available data representation such as ordinary 2D images and be able to infer the most scene/object properties as possible – such as it's geometry, topology, appearance and so on. Doing that in a useful and standard representation for new media applications and in a more accessible way are also ideal requirements. 
+Ideally we want to input the more abundant and easily available data representation such as ordinary 2D images and be able to infer the most scene/object properties as possible – such as it's geometry, topology, appearance and so on. Doing that in a useful and standard representation for new media applications and in a more accessible way are also ideal requirements. To tackle such a big challenge, we proceed by reviewing what is already built We proceed by checking the  
 
 
 
@@ -68,7 +68,7 @@ Ideally we want to input the more abundant and easily available data representat
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NDM0MjY1NSw5MzUyOTE1MjMsLTIxMT
+eyJoaXN0b3J5IjpbMjA2NjQ2NDU0MCw5MzUyOTE1MjMsLTIxMT
 Q5NDAxOTMsODM1NDE3NzU4LDExNTEwMTQ0ODAsLTE3NDMwODYz
 MjAsLTEzOTU4NDQ4ODgsLTE3MDQ0MTQ2NTMsLTEwODc2MDIzMD
 csLTY3OTgyNDAzMSwtNjgwMDQzNTA2LDczNzc1MzM3NSw4Mzk0
