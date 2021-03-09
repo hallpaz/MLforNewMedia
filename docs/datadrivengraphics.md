@@ -54,7 +54,7 @@ Graph Neural Networks. This way, machine learning in polygonal meshes might bene
 
 ### Implicit functions
 
-We can also represent geometric models as an isosurface of a scalar field. This way we have a continuous representation of a surface given by an implicit function. Visualization of implicit surfaces can be computed with raytracing or we can subdivide the space and extract a polygonal mesh using a method like Marching Cubes. A continuous representation has some advantages as we have arbitrary resolution at a low storage cost. As neural networks are universal approximators for continuous functions [X], we c
+We can also represent geometric models as an isosurface of a scalar field. This way we have a continuous representation of a surface given by an implicit function. Visualization of implicit surfaces can be computed with raytracing or we can subdivide the space and extract a polygonal mesh using a method like Marching Cubes. A continuous representation has some advantages as we have arbitrary resolution at a low storage cost. As neural networks are universal approximators for continuous functions [X], we can try to parameterize 
 
 ### These representations are not exhaustive
 
@@ -87,11 +87,11 @@ In particular, multiview images are here "since forever" and we can avail all th
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNjA4NzE5Nyw4MzU0MTc3NTgsMTE1MT
-AxNDQ4MCwtMTc0MzA4NjMyMCwtMTM5NTg0NDg4OCwtMTcwNDQx
-NDY1MywtMTA4NzYwMjMwNywtNjc5ODI0MDMxLC02ODAwNDM1MD
-YsNzM3NzUzMzc1LDgzOTQwMzMwLDM1NzkyNzAwNSwtMTMxNDMw
-MzUwNCwtMTMxODQyMjE3LDkzMTAxOTEwNCw1ODg4NjE0NjksND
-M0MzI1NDMxLC0xODk5NTgwMjQ5LC01MzIxNzAxNjEsLTExOTg3
-NTYxNjFdfQ==
+eyJoaXN0b3J5IjpbOTM1MjkxNTIzLDgzNTQxNzc1OCwxMTUxMD
+E0NDgwLC0xNzQzMDg2MzIwLC0xMzk1ODQ0ODg4LC0xNzA0NDE0
+NjUzLC0xMDg3NjAyMzA3LC02Nzk4MjQwMzEsLTY4MDA0MzUwNi
+w3Mzc3NTMzNzUsODM5NDAzMzAsMzU3OTI3MDA1LC0xMzE0MzAz
+NTA0LC0xMzE4NDIyMTcsOTMxMDE5MTA0LDU4ODg2MTQ2OSw0Mz
+QzMjU0MzEsLTE4OTk1ODAyNDksLTUzMjE3MDE2MSwtMTE5ODc1
+NjE2MV19
 -->
