@@ -110,14 +110,14 @@ On the other hand, Deep Local **Shapes** takes the key idea of DeepSDF one step 
 
 ### 3rd generation models
 
-These models represent implicit surfaces as the solution to the Eikonal equation.
+These models represent implicit surfaces as the solution to the Eikonal equation - the particular case where the gradient is equal ot 1 represents a signed distance function.
 
 $$||\nabla f|| = 1||$$ 
 
 - reconstruct from it's derivative
-- an interesting point to note is an improvement to deep learning solutions is derived from this approach as SIREN Sinusoidal 
+- an interesting point to note is that this approach (SIREN) is an improvement to deep learning solutions is derived from this  as SIREN Sinusoidal 
 
-This particular case of the Eikonal Equation representas a signed distance function.
+
 
 ### 4th generation models
 
@@ -187,5 +187,6 @@ TODO: check name's spelling
 * Thales
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM5NjIzMDIwLC0xNTI4MjU5NTc2XX0=
+eyJoaXN0b3J5IjpbLTE3OTkwOTAzMTksLTE1MjgyNTk1NzZdfQ
+==
 -->
