@@ -55,9 +55,9 @@ The simplicity of this representation comes at the cost of a high memory footpri
 
 ### Point Clouds
 
-A point cloud is a set of data points in space with no specific order. Point clouds provide us information about a surface geometry, but lack information about its topology.  It's a common output of scanning processes and for that it has a low cost of aqucitions 
+A point cloud is a set of data points in space with no specific order. Point clouds provide us information about a surface geometry, but lack information about its topology.  It's a common output of scanning processes and for that it has a low cost of acquisition. 
 
-The unordered structure of a point cloud is a challenge for learning tasks as we must derive permutation invariant methods. PointNet was the first architecture to make a direct use of point clouds as input and successfully encode this kind of data generating robust features for classification and segmentation tasks. This made PointNet based encoders useful for many other problems of machine learning in computer graphics.
+The unordered structure of a point cloud is a challenge for learning tasks as we must derive permutation invariant methods. PointNet [X] was the first architecture to make a direct use of point clouds as input and successfully encode this kind of data generating robust features for classification and segmentation tasks. This made PointNet based encoders useful for many other problems of machine learning in computer graphics.
 
  We can establish a system of reference .... understand 
 
@@ -103,9 +103,10 @@ In particular, multiview images are here "since forever" and we can avail all th
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODc2MDIzMDcsLTY3OTgyNDAzMSwtNj
-gwMDQzNTA2LDczNzc1MzM3NSw4Mzk0MDMzMCwzNTc5MjcwMDUs
-LTEzMTQzMDM1MDQsLTEzMTg0MjIxNyw5MzEwMTkxMDQsNTg4OD
-YxNDY5LDQzNDMyNTQzMSwtMTg5OTU4MDI0OSwtNTMyMTcwMTYx
-LC0xMTk4NzU2MTYxLDE0Njc5MzM2MzFdfQ==
+eyJoaXN0b3J5IjpbLTIxNDY5MTM2MTYsLTEwODc2MDIzMDcsLT
+Y3OTgyNDAzMSwtNjgwMDQzNTA2LDczNzc1MzM3NSw4Mzk0MDMz
+MCwzNTc5MjcwMDUsLTEzMTQzMDM1MDQsLTEzMTg0MjIxNyw5Mz
+EwMTkxMDQsNTg4ODYxNDY5LDQzNDMyNTQzMSwtMTg5OTU4MDI0
+OSwtNTMyMTcwMTYxLC0xMTk4NzU2MTYxLDE0Njc5MzM2MzFdfQ
+==
 -->
