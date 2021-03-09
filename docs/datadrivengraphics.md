@@ -38,7 +38,6 @@ Voxels are a natural extension to 3D of the ideia of a 2D pixel. It's a way to e
 
 The simplicity of this representation comes at the cost of a high memory footprint as we have to store data for both occupied and unoccupied voxels. By using a hierarchical data structure such as an octree, we can have varying-sized voxels and use less memory to represent unoccupied space or low detailed . 
 
-
 ### Point Clouds
 
 A point cloud is a set of data points in space with no specific order. Point clouds provide us information about a surface geometry, but lack information about its topology.  It's a common output of scanning processes and for that it has a low cost of acquisition. 
@@ -91,7 +90,7 @@ In particular, multiview images are here "since forever" and we can avail all th
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MTk2NDMyLC0xNzQzMDg2MzIwLC0xMz
+eyJoaXN0b3J5IjpbMzgxMDgwNDE4LC0xNzQzMDg2MzIwLC0xMz
 k1ODQ0ODg4LC0xNzA0NDE0NjUzLC0xMDg3NjAyMzA3LC02Nzk4
 MjQwMzEsLTY4MDA0MzUwNiw3Mzc3NTMzNzUsODM5NDAzMzAsMz
 U3OTI3MDA1LC0xMzE0MzAzNTA0LC0xMzE4NDIyMTcsOTMxMDE5
