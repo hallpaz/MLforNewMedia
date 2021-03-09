@@ -61,6 +61,7 @@ The unordered structure of a point cloud is a challenge for learning tasks as we
 
 ### Polygonal Mesh
 
+A polygonal mesh 
 - standard for many applications in computer graphics, specially visual media.
 - Graph Neural Networks
 
@@ -101,10 +102,10 @@ In particular, multiview images are here "since forever" and we can avail all th
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDQ0MTQ2NTMsLTEwODc2MDIzMDcsLT
-Y3OTgyNDAzMSwtNjgwMDQzNTA2LDczNzc1MzM3NSw4Mzk0MDMz
-MCwzNTc5MjcwMDUsLTEzMTQzMDM1MDQsLTEzMTg0MjIxNyw5Mz
-EwMTkxMDQsNTg4ODYxNDY5LDQzNDMyNTQzMSwtMTg5OTU4MDI0
-OSwtNTMyMTcwMTYxLC0xMTk4NzU2MTYxLDE0Njc5MzM2MzFdfQ
-==
+eyJoaXN0b3J5IjpbLTMwNDA2NjQ2OCwtMTcwNDQxNDY1MywtMT
+A4NzYwMjMwNywtNjc5ODI0MDMxLC02ODAwNDM1MDYsNzM3NzUz
+Mzc1LDgzOTQwMzMwLDM1NzkyNzAwNSwtMTMxNDMwMzUwNCwtMT
+MxODQyMjE3LDkzMTAxOTEwNCw1ODg4NjE0NjksNDM0MzI1NDMx
+LC0xODk5NTgwMjQ5LC01MzIxNzAxNjEsLTExOTg3NTYxNjEsMT
+Q2NzkzMzYzMV19
 -->
