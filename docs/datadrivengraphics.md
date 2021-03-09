@@ -56,7 +56,7 @@ Graph Neural Networks. This way, machine learning in polygonal meshes might bene
 
 We can also represent geometric models as an isosurface of a scalar field. This way we have a continuous representation of a surface given by an implicit function. Visualization of implicit surfaces can be computed with raytracing or we can subdivide the space and extract a polygonal mesh using a method like Marching Cubes. A continuous representation has some advantages as we have arbitrary resolution at a low storage cost. As neural networks are universal approximators for continuous functions [X], we can try to parameterize a target scalar field by a neural network. This approach has led to incredible results in the last months and is an highly active research field.
 
-### These representations are not exhaustive
+## These representations are not exhaustive
 
 We presented some common choices for representing 3D data for machine learning in computer graphics. There are current efforts and advances being made in each of these directions. Some representations are mode related to ours sensors, so they are easier to capture, on the other hand other representations are more suitable for 3D computer graphics tasks and applications for *new medias* such as real time rendering, artistic modeling or automated assets generation. 
 
@@ -68,7 +68,7 @@ Ideally we want to input the more abundant and easily available data representat
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgxODkwNTg3LDkzNTI5MTUyMywtMjExND
+eyJoaXN0b3J5IjpbNjUyMDUwMjg2LDkzNTI5MTUyMywtMjExND
 k0MDE5Myw4MzU0MTc3NTgsMTE1MTAxNDQ4MCwtMTc0MzA4NjMy
 MCwtMTM5NTg0NDg4OCwtMTcwNDQxNDY1MywtMTA4NzYwMjMwNy
 wtNjc5ODI0MDMxLC02ODAwNDM1MDYsNzM3NzUzMzc1LDgzOTQw
