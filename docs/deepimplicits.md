@@ -156,11 +156,11 @@ In turn, the IDR model is incorporated in a loss comparing it to the ground trut
 
 ## Remarks
 
-It takes a key idea, usually inspired by classical results built over the time in the area and figuring out how to make it work.
+It takes a key idea, usually inspired by classical results built over the time in the are, and it figures out how to make it work.
 
-It's interesting to note that many of these works can be trained on synthetic data and evaluated on real data, which demonstrantes a reasonable degree of generalization.
+- It's interesting to note that many of these works can be trained on synthetic data and evaluated on real data, which demonstrates a reasonable degree of generalization.
 
-Overfitting might be desirable in some cases. An ideia that sounds counter-intuitive for most machine learning scenarios so far.
+- Overfitting might be desirable in some cases. An ideia that sounds counter-intuitive for most machine learning scenarios so far.
 
 
 
@@ -185,5 +185,5 @@ TODO: check name's spelling
 * Thales
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxOTAwMDkwLC0xNTI4MjU5NTc2XX0=
+eyJoaXN0b3J5IjpbLTM3MDQ0NTAwOCwtMTUyODI1OTU3Nl19
 -->
