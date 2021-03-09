@@ -10,7 +10,7 @@ One 3D representation we find particularly interesting is the implicit represent
 
 This representation has some advantages
 
-* It's the only continuous representation. All other represetations are limited to a fixed resolution due to data discretization. Either you have a limited set of points such as in point clouds and polygonal meshes or you have fixed grid  where your object is represetend such as voxels or image based representations. ... we can represent surfaces as a level set of an continuous function defined implicitly. This allows us to visualize the surface or even extract a polygonal mesh using Marching Cubes in arbitrary resolution - the resolution required for the application.
+* It's the only continuous representation. All other representations are limited to a fixed resolution due to data discretization. Either you have a limited set of points such as in point clouds and polygonal meshes or you have fixed grid  where your object is represetend such as voxels or image based representations. ... we can represent surfaces as a level set of an continuous function defined implicitly. This allows us to visualize the surface or even extract a polygonal mesh using Marching Cubes in arbitrary resolution - the resolution required for the application.
 
 Thinking about the New Media scenario, arbitrary resolution is extremely powerful as we could have a structure of different level os details and, for instance, send a corse version of the surface through the network while a more refined version can be assembled .... keeping a real time interaction.
   
@@ -185,5 +185,6 @@ TODO: check name's spelling
 * Thales
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyOTY5MTk3NywtMTUyODI1OTU3Nl19
+eyJoaXN0b3J5IjpbLTE1Njg0NzUyNzEsLTE1MjgyNTk1NzZdfQ
+==
 -->
