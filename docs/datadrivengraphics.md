@@ -54,6 +54,7 @@ Graph Neural Networks. This way, machine learning in polygonal meshes might bene
 
 ### Implicit functions
 
+
 All representations we saw so far 
 - continuous
 - compact
@@ -90,10 +91,10 @@ In particular, multiview images are here "since forever" and we can avail all th
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgxMDgwNDE4LC0xNzQzMDg2MzIwLC0xMz
-k1ODQ0ODg4LC0xNzA0NDE0NjUzLC0xMDg3NjAyMzA3LC02Nzk4
-MjQwMzEsLTY4MDA0MzUwNiw3Mzc3NTMzNzUsODM5NDAzMzAsMz
-U3OTI3MDA1LC0xMzE0MzAzNTA0LC0xMzE4NDIyMTcsOTMxMDE5
-MTA0LDU4ODg2MTQ2OSw0MzQzMjU0MzEsLTE4OTk1ODAyNDksLT
-UzMjE3MDE2MSwtMTE5ODc1NjE2MSwxNDY3OTMzNjMxXX0=
+eyJoaXN0b3J5IjpbMTE1MTAxNDQ4MCwtMTc0MzA4NjMyMCwtMT
+M5NTg0NDg4OCwtMTcwNDQxNDY1MywtMTA4NzYwMjMwNywtNjc5
+ODI0MDMxLC02ODAwNDM1MDYsNzM3NzUzMzc1LDgzOTQwMzMwLD
+M1NzkyNzAwNSwtMTMxNDMwMzUwNCwtMTMxODQyMjE3LDkzMTAx
+OTEwNCw1ODg4NjE0NjksNDM0MzI1NDMxLC0xODk5NTgwMjQ5LC
+01MzIxNzAxNjEsLTExOTg3NTYxNjEsMTQ2NzkzMzYzMV19
 -->
