@@ -115,8 +115,7 @@ These models represent implicit surfaces as the solution to the Eikonal equation
 $$||\nabla f|| = 1||$$ 
 
 - reconstruct from it's derivative
-- an interesting point to note is that this approach (SIREN) is an improvement to deep learning solutions is derived from this  as SIREN Sinusoidal 
-
+- an interesting point to note is that this approach (SIREN) is an improvement to deep learning solutions in general - another useful activation function
 
 
 ### 4th generation models
@@ -143,8 +142,7 @@ As we can imagine, this positional enconding based on Fourier Features transform
 
 **Can we use NeRF to solve panorama interpolation problem?**
 **Can we make it more general in this case?**
-
-**Can I estimate the distance between two centers of captured panoramas?**
+**Can I estimate the distance between two centers of captured panoramas (unknow cameras)?**
 
 
 Last, but not least, we have the approach used in [**Multiview Neural Surface Reconstruction by Disentangling Geometry and Appearance**](https://lioryariv.github.io/idr/). 
@@ -187,6 +185,5 @@ TODO: check name's spelling
 * Thales
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTkwOTAzMTksLTE1MjgyNTk1NzZdfQ
-==
+eyJoaXN0b3J5IjpbMTkxOTAwMDkwLC0xNTI4MjU5NTc2XX0=
 -->
