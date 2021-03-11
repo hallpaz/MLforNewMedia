@@ -6,55 +6,33 @@ nav_order: 3
 
 # Representing the World Implicitly with Neural Networks
 
-One 3D representation we find particularly interesting is the implicit representation. It turns out that over the last year it happened an explosion of interesting works in this area, leveraging the power of neural networks to represent 3D surfaces implicitly.
+Among the multiple 3D data representations, we saw we can model surfaces as a level set of a continuous function defined implicitly. Over the last months, it happened an explosion of interesting works about implicit surfaces representations using neural networks and it's a promising reseach path for new medias. 
 
-This representation has some advantages
+Implicit surfaces are the only continuous representation of 3D data. In other representations, either you have a limited set of points such as in point clouds and polygonal meshes or you have fixed grid  where your object is represented such as voxels or image based representations. This approach allows us to visualize or even extract a polygonal mesh from this model in arbitrary resolution which is extremely powerful for new media applications. For instance, thinking about interactive media over a network, we could have a structure of different levels of details in a server and incrementally refine the versions visualized in the clients, keeping a real time interaction. Implicit surfaces also have low memory footprint as their neural networks representations require less parameters and layers.
 
-* It's the only continuous representation. All other representations are limited to a fixed resolution due to data discretization. Either you have a limited set of points such as in point clouds and polygonal meshes or you have fixed grid  where your object is represetend such as voxels or image based representations. ... we can represent surfaces as a level set of an continuous function defined implicitly. This allows us to visualize the surface or even extract a polygonal mesh using Marching Cubes in arbitrary resolution - the resolution required for the application.
-
-Thinking about the New Media scenario, arbitrary resolution is extremely powerful as we could have a structure of different level os details and, for instance, send a corse version of the surface through the network while a more refined version can be assembled .... keeping a real time interaction.
-  
-* Low memory footprint
-
-As we'll see, this area starts with works trying to model the data with a global representation, which is suitable for single objects, but not so good for large scenes. 
+Here, we describe some very recent works on this topic. We do not intend to be exautisve or extensive as a survey, so we'll citeonly few works whose key ideas helped us to better understand how this field of research is developing and what could be research directions over these ideas applied to new medias.
 
 
-Then, we see a second generaton of models which add local information to better represent large scenes and also improve the quality of representation for single objects when 
+As we'll see, this area starts with works trying to model the data with a global representation, which is suitable for single objects, but not so good for large scenes. We see a second generaton of models which add local information to better represent large scenes and they also improve the quality of representation for single objects. Then there are a third generation of models which brings an important perspective based on the Eikonal Equation to this deep learning scenario and also proposes periodic activation functions for neural networks. And finally, we have a fourth generation of models which are able to encode both geometry and appearance of objects and scenes, such as NeRF - Neural Radiance Fields – which applies the neural networks paradigm to encode light fields.
 
-
-Third generation models which brings an important XXX to the deep learing scenario. Using radial basis functions such as sinus as the nonlinear steps in neural networks instead of ReLu.
-
-And as a fourth generation model, we see impressive visual results from NeRF - Neural Radiance Fields, which applies the neural networks paradigm to represent light fields(?).
-
-Here, we describe two works 
-We do not intend to be exautisve or extensive as a survey, so we'll cite a few works whose key ideas helped us to better understand how this field of research is developing and what could be research directions  over these ideas applied to New Medias.
+## First Generation 
 
 ### Occupancy Networks
-"Our key insight
-is that we can approximate this 3D function with a neu-ral network that assigns to every location $p \in R^3$ an occupancy probability between 0 and 1. Note that this network is
-equivalent to a neural network for binary classification, ex-cept that we are interested in the decision boundary which
-implicitly represents the object’s surface."
 
-We can use the neural network to solve a binary classification problem: **is this 3D point inside or outside the surface?**
-So, we use the neural network to model a probability of occupancy in space and we are interested in the decision boundary which implicitly represents the object's surface.
-LATENT?
+We are used to apply neural networks to solve binary (and not binary) classification problems in many domains. We can frame the implicit surface representation problem as a binary classification problem by asking the following question: **is this 3D point inside or outside the surface?**
+
+Occupancy Networks [X] builds upon this idea by using a neural network to approximate a continuous scalar field that assigns to every location $p \in R^3$ an occupancy probability between 0 and 1. This way, the decision boundary of this classificator implicitly represents the object's surface.
+
+To give some generalization abilities to the network, it is condiotioned over a latent code of the shape. For instance, if we have a dataset of point clouds, we can use PointNet to encode the point cloud into a low dimensional latent code and feed it to the network along the 3D space coordinate we want to classify.
 
 ### Deep SDF
 
-On the other hand, Deep SDF decides to represent a surface implicitly by it's Signed Distance Function, [another classical and useful representation in implicit functions theory]. This way, they reframe the problem as a regression problem, so 
+On the other hand, Deep SDF reframes the implicit surface representation as a regression problem by approximating the Signed Distance Function (SDF). Their ideia is to use a neural network to approximate a continuous scalar field for which the magnitude of a point in the field represents the distance to the surface boundary and the sign indicates whether the region is inside (-) or outside (+) of the shape. This way, the surface is implicitly represented as the zero-level-set of the learned function.
 
-"DeepSDF, like its classical counterpart, represents a shape’s surface by a continuous volumetric field: the magnitude of a point in the field represents the distance to the surface boundary and the sign indicates whether the region is inside (-) or outside (+) ofthe shape, hence our representation implicitly encodes a shape’s boundary as the zero-level-set of the learned function while explicitly representing the classification ofspace as being part of the shapes interior or not"
+$$ SDF(x) = s : x ∈ R^3, s ∈ R $$
 
-"We describe modeling shapes
-as the zero iso-surface decision boundaries of feed-forward
-networks trained to represent SDFs.
-A signed distance func- tion is a continuous function that, for a given spatial point, outputs the point’s distance to the closest surface, whose sign encodes whether the point is inside (negative) or out- side (positive) of the watertight surface:
 
-$$ SDF(x) = s : x ∈ R3, s ∈ R $$
-
-Our key idea is to directly regress the continuous SDF
-from point samples using deep neural networks. The re- sulting trained network is able to predict the SDF value of a given query position, from which we can extract the zero level-set surface by evaluating spatial samples. Such surface representation can be intuitively understood as a learned binary classifier for which the decision boundary is the surface of the shape itself as depicted in Fig.
-"
+Like Occupancy Networks, if we want to achieve some degree of generalization with this approach, we need to condition the input to the network. However, unlike Occupancy Networks, DeepSDF doesn't use an external encoder as it trains an autodecoder architecture for shape family learning by optimizing the latent code during the network training.
 
 
 ## 2nd Generation
