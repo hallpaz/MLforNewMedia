@@ -50,45 +50,41 @@ Their strategy consists in projecting features in 2D canonical planes or a 3D ca
 
 With this architecture, they are able to reconstruct large scenes by applying it in a “sliding-window” at inference time, such as convolutional operators in images.
 
+### Deep Local Shapes
+
+On the other hand, **Deep Local Shapes** [X] takes the key idea of DeepSDF one step further, by training a neural network to regress the Truncated Signed Distance Function (TSDF) using local latent codes. "The key idea of DeepLS is to compose complex general shapes and scenes from a collection of simple local shapes" it turns out it is more efficient and flexible to encode the space of smaller local shapes and to compose the global shape from an adaptable amount of local codes.
+
+
 
 ### CvxNet: Learnable Convex Decomposition
+
 
 **CvxNet: Learnable Convex Decomposition** convex decompositions as universal approximators of 3D geometry.
 
 "Our object is represented via an indicator O : R3 →[0, 1], and with ∂O = {x ∈ R3 | O(x) = 0.5} we indicate the surface of the object. The indicator function is defined such that {x ∈ R3 | O(x) = 0} defines the outside of the object and {x ∈ R3 | O(x) = 1} the inside. Given an input (e.g. an image, point cloud, or voxel grid) an encoder estimates the parameters {βk} of our template representation
 Oˆ(·)
 with K primitives (indexed by k). We then evaluate the template at random sample points x, and our training loss ensures
-Oˆ(x) ≈ O(x). In the discussion below, without
-loss of generality, we use 2D illustrative examples where O : R2 →[0, 1]. Our representation is a differentiable con- vex decomposition, which is used to train an image encoder in an end-to-end fashion."
+Oˆ(x) ≈ O(x). 
 
-**BSP-Net**
+In the discussion below, without loss of generality, we use 2D illustrative examples where O : R2 →[0, 1]. 
 
-"In this paper, we develop a generative neural network
-which outputs polygonal meshes natively."
-
-"BSP-Net is the first deep generative network which di-
-rectly outputs compact and watertight polygonal meshes with arbitrary topology and structure variety.
-• The learned BSP-tree allows us to infer both shape seg- mentation and part correspondence.
-• By adjusting the encoder of our network, BSP-Net can also be adapted for shape auto-encoding and single-view 3D reconstruction (SVR).
-• To the best of our knowledge, BSP-Net is among the first to achieve structured SVR, reconstructing a segmented 3D shape from a single unstructured object image.
-• Last but not the least, our network is also the first which can reconstruct and recover sharp geometric features."
-
-"At inference time, we feed the input to the network to ob-tain components of the BSP-tree, i.e., leaf nodes (planes P)
-and connections (binary weights T). We then apply classic Constructive Solid Geometry (CSG) to extract the ex-plicit polygonal surfaces of the shapes."
-
-decompose em planos, learnable plane parameters, learn how to combine (CSG) them and also the union
+Our representation is a differentiable convex decomposition, which is used to train an image encoder in an end-to-end fashion."
 
 "Another similar work is CvxNet [8], which decomposes
-shapes as a collection of convex primitives. However, BSP-Net differs from CvxNet in several significant ways: 1? we
-target low-poly reconstruction with sharp features, while
-they target smooth reconstruction; 2? their network always
-outputs K convexes, while the “right” number of primitives
-is learnt automatically in our method; 3? our optimization
+shapes as a collection of convex primitives. However, BSP-Net differs from CvxNet in several significant ways: 1? , while they target smooth reconstruction; 2? their network always
+outputs K convexes, while the “right” number of primitives is learnt automatically in our method; 3? our optimization
 routine is completely different from theirs, as their compositional tree structure is hard-coded."
 
-On the other hand, Deep Local **Shapes** takes the key idea of DeepSDF one step further, by training a neural network to regress the Truncated Signed Distance Function (TSDF) using local latent codes. "The key idea of DeepLS is to compose complex general shapes and scenes from a collection of simple local shapes" it turns ou it is more efficient and flexible to encode the space of smaller local shapes and to compose the global shape from an adaptable amount of local codes.
+### BSP-Net
 
-### 3rd generation models
+BSP-Net is a deep generative network which directly outputs compact and watertight polygonal meshes via convex decomposition. Their ideia is to train a neural network to reconstruct a shape using a set of convexes built on a set of planes with learnable parameters and obtained from a BSP-tree (Binary Space Partitioning). BSP-Net targets low-poly reconstruction with sharp features by learning to represent shapes ans planes on leaf nodes and their connections on interior nodes. The explicit polygonal surface is extracted from the BSP-tree by applying classic Constructive Solid Geometry (CSG).
+
+As it outputs polygonal meshes natively based on opertaions on planes, it's able to reconstruct and recover sharp geometric features with low-poly in opposition to meshes extracted using methods like marshing cubes. The learned BSP-tree also allows it to infer both shape segmentation and part correspondence.  
+
+- with arbitrary topology and structure variety.
+- The core ingredient of BSP is an operation for recursive subdivision of space to obtain convex sets. 
+
+## 3rd generation models
 
 These models represent implicit surfaces as the solution to the Eikonal equation - the particular case where the gradient is equal ot 1 represents a signed distance function.
 
@@ -98,9 +94,11 @@ $$||\nabla f|| = 1||$$
 - an interesting point to note is that this approach (SIREN) is an improvement to deep learning solutions in general - another useful activation function
 
 
-### 4th generation models
+## 4th generation models
 
 All methods above tackle the problem of surface reconstruction from data, outputting either a polygonal mesh or an isosurface representation from which we could extract a mesh. On the other hand, we could think about a scene representation suitable for direct visualization or, in other words, instead of solving a surface reconstruction problem and render the surface to visualize it, we could solve a novel view synthesis problem and generate a visualization of an unseen viewpoint directly based on the data we have.
+
+### Neural Radiance Fields
 
 NeRF solves the novel view synthesis problem by parameterizing a scene using a neural network. For each 3D point in space and observation direction the neural network outputs an RGB color and a volume density value. With this approach they were able to apply volume rendering techniques to compose the density values along the camera ray direction and generate a novel view. 
 
@@ -124,6 +122,8 @@ As we can imagine, this positional enconding based on Fourier Features transform
 **Can we make it more general in this case?**
 **Can I estimate the distance between two centers of captured panoramas (unknow cameras)?**
 
+
+### Multiview Neural Surface Reconstruction by Disentangling Geometry and Appearance
 
 Last, but not least, we have the approach used in [**Multiview Neural Surface Reconstruction by Disentangling Geometry and Appearance**](https://lioryariv.github.io/idr/). 
 
@@ -164,3 +164,6 @@ This study was conducted with the Deep Implicity Study Group during the summer a
 
 #### Msc Students
 * Thales Magalhães
+
+## References
+=> TODO

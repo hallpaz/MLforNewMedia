@@ -64,14 +64,7 @@ Ideally we want to input the more abundant and easily available data representat
 
 
 
-1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
+## References
+=> TODO
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM2MjQ1MDExLDkzNTI5MTUyMywtMjExND
-k0MDE5Myw4MzU0MTc3NTgsMTE1MTAxNDQ4MCwtMTc0MzA4NjMy
-MCwtMTM5NTg0NDg4OCwtMTcwNDQxNDY1MywtMTA4NzYwMjMwNy
-wtNjc5ODI0MDMxLC02ODAwNDM1MDYsNzM3NzUzMzc1LDgzOTQw
-MzMwLDM1NzkyNzAwNSwtMTMxNDMwMzUwNCwtMTMxODQyMjE3LD
-kzMTAxOTEwNCw1ODg4NjE0NjksNDM0MzI1NDMxLC0xODk5NTgw
-MjQ5XX0=
--->
+1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
