@@ -12,7 +12,6 @@ Implicit surfaces are the only continuous representation of 3D data. In other re
 
 Here, we describe some very recent works on this topic. We do not intend to be exautisve or extensive as a survey, so we'll citeonly few works whose key ideas helped us to better understand how this field of research is developing and what could be research directions over these ideas applied to new medias.
 
-
 As we'll see, this area starts with works trying to model the data with a global representation, which is suitable for single objects, but not so good for large scenes. We see a second generaton of models which add local information to better represent large scenes and they also improve the quality of representation for single objects. Then there are a third generation of models which brings an important perspective based on the Eikonal Equation to this deep learning scenario and also proposes periodic activation functions for neural networks. And finally, we have a fourth generation of models which are able to encode both geometry and appearance of objects and scenes, such as NeRF - Neural Radiance Fields – which applies the neural networks paradigm to encode light fields.
 
 ## First Generation 
@@ -39,17 +38,20 @@ Like Occupancy Networks, if we want to achieve some degree of generalization wit
 
 The ideas to represent a global implicit function using a neural network are pretty straightforward and give encoraging results for many objects. However, it's hard to model large scale scenes using only global information. Even highly detailed models might not be represented accurately.
 
-To address these issues, researchers proposed a variety of techiniques here described as local models. We start looking to the follow up works over Occupancy Networks and DeepSDF, respectively, Convolutional Occupancy Networks and Deep Local Shapes.
+To address these issues, researchers proposed a variety of techiniques here described as local models. We start by looking to the follow up works over Occupancy Networks and DeepSDF, respectively, Convolutional Occupancy Networks and Deep Local Shapes.
+
+### Convolutional Occupancy Network
 
 In **Convolutional Occupancy Network**, motivated by the hypothesis that
 "The key limiting factor of most implicit models is their simple fully-connected network architecture which neither allows for integrating local information in the observations, nor for incorporating inductive biases such as translation equivariance into the model” they try to find a new architecture to better represent large scene properties. 
 
-They try to derive a strategy that could agreggate neighbhood features such as the convolutional layers do for images. This way, they expect to create features with translation equivariance before running the fully connected model to estimate the occupancy probability.
-
-Nice property; I didn't get the "fully convolutional" meaning though:
-"As our model is fully-convolutional, we are able to reconstruct large scenes by applying it in a “sliding-window” fashion at inference time. We exploit this property to obtain reconstructions of entire apartments"
+Their strategy consists in projecting features in 2D canonical planes or a 3D canonical volume and generate new features by agreggating neighborhood features using interpolation. This should simulate what the convolutional layers do for images as information is combined and distributed in local neighboorhods. This way, they expect to create features with translation equivariance before running the fully connected model to estimate the occupancy probability.
 
 
+With this architecture, they are able to reconstruct large scenes by applying it in a “sliding-window” at inference time, such as convolutional operators in images.
+
+
+### CvxNet: Learnable Convex Decomposition
 
 **CvxNet: Learnable Convex Decomposition** convex decompositions as universal approximators of 3D geometry.
 
@@ -143,10 +145,11 @@ In turn, the IDR model is incorporated in a loss comparing it to the ground trut
 
 
 ## Deep Implicits Group
-TODO: check name's spelling
+
+This study was conducted with the Deep Implicity Study Group during the summer at IMPA.
 
 #### Professors:
-* Luiz velho
+* Luiz velho (organizer)
 * Luiz Henrique de Figueiredo
 
 #### Post-doc researchers
@@ -160,9 +163,4 @@ TODO: check name's spelling
 * Hallison Paz (me)
 
 #### Msc Students
-* Thales
-  
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Njg0NzUyNzEsLTE1MjgyNTk1NzZdfQ
-==
--->
+* Thales Magalhães
