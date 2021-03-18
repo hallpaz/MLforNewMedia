@@ -21,7 +21,7 @@ As we'll see, this area starts with works trying to model the data with a global
 
 We are used to apply neural networks to solve binary (and not binary) classification problems in many domains. We can frame the implicit surface representation problem as a binary classification problem by asking the following question: **is this 3D point inside or outside the surface?**
 
-Occupancy Networks [X] builds upon this idea by using a neural network to approximate a continuous scalar field that assigns to every location $ p \in R^3 $ an occupancy probability between 0 and 1. This way, the decision boundary of this classificator implicitly represents the object's surface.
+Occupancy Networks [X] builds upon this idea by using a neural network to approximate a continuous scalar field that assigns to every location \(p \in R^3\) an occupancy probability between 0 and 1. This way, the decision boundary of this classificator implicitly represents the object's surface.
 
 To give some generalization abilities to the network, it is condiotioned over a latent code of the shape. For instance, if we have a dataset of point clouds, we can use PointNet to encode the point cloud into a low dimensional latent code and feed it to the network along the 3D space coordinate we want to classify.
 
@@ -57,9 +57,9 @@ On the other hand, **Deep Local Shapes** [X] takes the key idea of DeepSDF one s
 
 ### CvxNet: Learnable Convex Decomposition
 
-CvxNet relies on convex decompositions as universal approximators of 3D geometry. Like Occupancy Networks, they model an object via an indicator function $ O : R^e →[0, 1] $  with $ ∂O = {x ∈ R^3 / O(x) = 0.5} $ representing the surface of the object. However, they decompose the object in K primitive convexes using a template compositional tree structure.
+CvxNet relies on convex decompositions as universal approximators of 3D geometry. Like Occupancy Networks, they model an object via an indicator function \(O : R^e →[0, 1]\)  with \(∂O = {x ∈ R^3 / O(x) = 0.5}\) representing the surface of the object. However, they decompose the object in \(K\) primitive convexes using a template compositional tree structure.
 
-This convex decomposition is differentiable and it is used to train an end-to-end image encoder. Given an input (e.g. an image, point cloud, or voxel grid) the encoder estimates the parameters $ β_k $ of their template representation $ Ô(·) $ with $K$ primitives (indexed by k). Then, the template is evaluated at random sample points $x$ and a training loss is used to measure the quality of the approximation $Ô(x) ≈ O(x)$. 
+This convex decomposition is differentiable and it is used to train an end-to-end image encoder. Given an input (e.g. an image, point cloud, or voxel grid) the encoder estimates the parameters \(β_k\) of their template representation $ Ô(·) $ with $K$ primitives (indexed by k). Then, the template is evaluated at random sample points $x$ and a training loss is used to measure the quality of the approximation $Ô(x) ≈ O(x)$. 
 
 ### BSP-Net
 
