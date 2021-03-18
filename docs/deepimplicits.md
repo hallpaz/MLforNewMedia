@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Deep Implicits
+math: mathjax3
 nav_order: 3
 ---
 
@@ -56,7 +57,7 @@ On the other hand, **Deep Local Shapes** [X] takes the key idea of DeepSDF one s
 
 ### CvxNet: Learnable Convex Decomposition
 
-CvxNet relies on convex decompositions as universal approximators of 3D geometry. Like Occupancy Networks, they model an object via an indicator function $ O : R3 →[0, 1] $  with $ ∂O = {x ∈ R3 | O(x) = 0.5} $ representing the surface of the object. However, they decompose the object in K primitive convexes using a template compositional tree structure.
+CvxNet relies on convex decompositions as universal approximators of 3D geometry. Like Occupancy Networks, they model an object via an indicator function $ O : R^e →[0, 1] $  with $ ∂O = {x ∈ R^3 / O(x) = 0.5} $ representing the surface of the object. However, they decompose the object in K primitive convexes using a template compositional tree structure.
 
 This convex decomposition is differentiable and it is used to train an end-to-end image encoder. Given an input (e.g. an image, point cloud, or voxel grid) the encoder estimates the parameters $ β_k $ of their template representation $ Ô(·) $ with $K$ primitives (indexed by k). Then, the template is evaluated at random sample points $x$ and a training loss is used to measure the quality of the approximation $Ô(x) ≈ O(x)$. 
 
@@ -106,11 +107,7 @@ As we can imagine, this positional encoding based on Fourier Features transform 
 
 Last, but not least, we have the approach used in [**Multiview Neural Surface Reconstruction by Disentangling Geometry and Appearance**](https://lioryariv.github.io/idr/). 
 
-"Given a set of input masked 2D images, our goal is to infer the following three unknowns: (i) the geometry of the scene, represented as a zero level-set of an MLP f; (ii) the light and reflectance properties of the scene; and (iii) the unknown camera parameters. Toward that goal we simulate the rendering process of an implicit neural geometry inspired by the rendering equation.
-The IDR forward model produces differentiable RGB values for a learnable camera position c and some fixed image pixel p as follows: the camera parameters and pixel define a viewing direction v, and we denote by x the intersection of the viewing ray c+tv with the implicit surface.
-A Sample Network module represents x, and the normal to the surface n as differentiable functions of the implicit geometry and camera parameters.
-The final radiance reflected from the geometry toward the camera c in direction v, i.e., RGB, is approximated by the Neural Renderer M, an MLP that takes as input the surface point x and normal n, the viewing direction v, and a global geometry feature vector z.
-In turn, the IDR model is incorporated in a loss comparing it to the ground truth pixel color, that enables learning simultaneously the geometry, its appearance and camera parameters."
+*TODO: highlight its key ideas.*
 
 
 ## Remarks
