@@ -116,10 +116,11 @@ On the other hand, Deep Local **Shapes** takes the key idea of DeepSDF one step 
 
 ### 3rd generation models
 
-These models represent implicit surfaces as the solution to the Eikonal equation - the particular case where the gradient is equal ot 1 represents a signed distance function.
+These models represent implicit surfaces as the solution to the Eikonal equation - the particular case where the gradient is equal to 1 represents a signed distance function.
 
 $$||\nabla f|| = 1||$$ 
 
+Function reconstruction from it's derivative ... make a neural network 
 - reconstruct from it's derivative
 - an interesting point to note is that this approach (SIREN) is an improvement to deep learning solutions in general - another useful activation function
 
@@ -195,5 +196,5 @@ This study was conducted with the Deep Implicity Study Group during the summer a
 => TODO
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MTUyMTM3NV19
+eyJoaXN0b3J5IjpbMTI3NTA2NTEyM119
 -->
