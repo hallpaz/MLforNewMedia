@@ -138,15 +138,17 @@ This strategy tackles simultaneously the problem of scene geometry understanding
 
 It's interesting to notice that at a first moment, they had trouble to represent the fine details of objects. As noted in [X] fully connected neural networks learn low frequencies much faster than high frequencies. This way, they apply a "Fourier feature mapping", a transformation of the inputs from the low dimensional space to a higher dimensional feature space before passing them through the network. 
 
+$$ \gamma(v) = [cos(2\pi Bv), sin(2\pi Bv)]^T$$
+
 Simply applying a Fourier feature mapping to the input (x, y) points before passing them to the network allows for rapid convergence (orange border image).
 
 This Fourier feature mapping is very simple. For an input point v (for the example above, (x, y) pixel coordinates) and a random Gaussian matrix B, where each entry is drawn independently from a normal distribution N(0, σ2), we use
 
-$$ \gamma(v) = [cos(2\pi Bv), sin(2\pi Bv)]^T$$
+
 
 to map input coordinates into a higher dimensional feature space before passing them through the network."
 
-As we can imagine, this positional enconding based on Fourier Features transform is related to the SIREN approach wich formulated the problem mathematically and included the sinus function into the neural network representation.
+As we can imagine, this positional encoding based on Fourier Features transform is related to the SIREN approach which brought a better mathematical formulation to understand th problem mathematically and included the sinus function into the neural network representation.
 
 **Can we use NeRF to solve panorama interpolation problem?**
 **Can we make it more general in this case?**
@@ -199,5 +201,5 @@ This study was conducted with the Deep Implicity Study Group during the summer a
 => TODO
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MjQzMjA0OV19
+eyJoaXN0b3J5IjpbLTQzNjUwMjcxNl19
 -->
