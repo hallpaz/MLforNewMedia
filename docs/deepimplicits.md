@@ -120,7 +120,9 @@ These models represent implicit surfaces as the solution to the Eikonal equation
 
 $$||\nabla f|| = 1||$$ 
 
-Function reconstruction from it's derivative ... make a neural network 
+Function reconstruction from it's derivative ... Introducing the derivative of a surface as a type fo data to the implicit surface representation and reconstruction problem is an
+
+make a neural network solve a differential equation.
 - reconstruct from it's derivative
 - an interesting point to note is that this approach (SIREN) is an improvement to deep learning solutions in general - another useful activation function
 
@@ -196,5 +198,5 @@ This study was conducted with the Deep Implicity Study Group during the summer a
 => TODO
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NTA2NTEyM119
+eyJoaXN0b3J5IjpbLTEzNDU5MzU3N119
 -->
