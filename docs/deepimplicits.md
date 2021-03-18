@@ -122,7 +122,7 @@ $$||\nabla f|| = 1||$$
 
 Introducing the derivative of a surface as a type of data to the implicit surface representation and reconstruction problem is an interesting addition as it provides information about the normal vector to the surface, allowing us to represent fine and sharp details [Dual Contouring of Hermite Data]. 
 
-SIREN [X] dives into this ideia and proposes periodic activation functions for neural networks as a mean to improve its capabit
+SIREN [X] dives into this ideia and proposes periodic activation functions for neural networks as a mean to improve its convergence to high frequency details of signals. By using a basis of sinus functions 
 make a neural network solve a differential equation.
 - reconstruct from it's derivative
 - an interesting point to note is that this approach (SIREN) is an improvement to deep learning solutions in general - another useful activation function
@@ -199,6 +199,6 @@ This study was conducted with the Deep Implicity Study Group during the summer a
 => TODO
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNDExOTU0MSwxMzMxOTYyNTA2LC0xMT
-gwMjQ4NjA1LDE3ODExMTgzODhdfQ==
+eyJoaXN0b3J5IjpbLTE1NzMwNjY4ODEsMTMzMTk2MjUwNiwtMT
+E4MDI0ODYwNSwxNzgxMTE4Mzg4XX0=
 -->
