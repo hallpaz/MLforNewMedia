@@ -136,9 +136,11 @@ NeRF solves the novel view synthesis problem by parameterizing a scene using a n
 
 This strategy tackles simultaneously the problem of scene geometry understanding and view synthesis as they demonstrated the capability of render depth frames and use this depth information to address occlusion. Training a neural network using the view direction made it able to represent reflections and specularities when the view direction changes.
 
-It's interesting to notice that at a first moment, they had trouble to represent the fine details of objects. As noted XXXX fully connected neural networks learn low frequencies much faster than high frequencies. This way, they apply
+It's interesting to notice that at a first moment, they had trouble to represent the fine details of objects. As noted in [X] fully connected neural networks learn low frequencies much faster than high frequencies. This way, they apply a "Fourier feature mapping", a transformation from the lo
 
-n this paper, we train MLP networks to learn low dimensional functions, such as the function defined by an image that maps each (x, y) pixel coordinate to an output (r, g, b) color. A standard MLP is not able to learn such functions (blue border image). Simply applying a Fourier feature mapping to the input (x, y) points before passing them to the network allows for rapid convergence (orange border image).
+n this paper, we train MLP networks to learn low dimensional functions, such as the function defined by an image that maps each (x, y) pixel coordinate to an output (r, g, b) color. A standard MLP is not able to learn such functions (blue border image). 
+
+Simply applying a Fourier feature mapping to the input (x, y) points before passing them to the network allows for rapid convergence (orange border image).
 
 This Fourier feature mapping is very simple. For an input point v (for the example above, (x, y) pixel coordinates) and a random Gaussian matrix B, where each entry is drawn independently from a normal distribution N(0, σ2), we use
 
@@ -199,5 +201,5 @@ This study was conducted with the Deep Implicity Study Group during the summer a
 => TODO
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MDMyMTYyMV19
+eyJoaXN0b3J5IjpbLTI3NDYwNzg5NV19
 -->
