@@ -122,9 +122,7 @@ $$||\nabla f|| = 1||$$
 
 Introducing the derivative of a surface as a type of data to the implicit surface representation and reconstruction problem is an interesting addition as it provides information about the normal vector to the surface, allowing us to represent fine and sharp details [Dual Contouring of Hermite Data]. 
 
-SIREN [X] dives into this ideia and proposes periodic activation functions for neural networks as a mean to improve its convergence to high frequency details of signals. By using a basis of sinusoidal functions as activation functions, SIREN proved to be capable of reconstructing functions from its derivatives data. In other words, it's possible to solve a differential equation using a neural network and by solving a particular case of the Eikonal equation, one can implicitly represent a 3D scene. It seems like an interesting progress not only for AI Graphics, but for 
-- an interesting point to note is that this approach (SIREN) is an improvement to deep learning solutions in general - another useful activation function
-
+SIREN [X] dives into this ideia and proposes periodic activation functions for neural networks as a mean to improve its convergence to high frequency details of signals. By using a basis of sinusoidal functions as activation functions, SIREN proved to be capable of reconstructing functions from its derivatives data. In other words, it's possible to solve a differential equation using a neural network and by solving a particular case of the Eikonal equation, one can implicitly represent a 3D scene. It seems like an interesting progress not only for AI Graphics, but for other problems that could be solved by deep learning.
 
 ### 4th generation models
 
@@ -197,6 +195,6 @@ This study was conducted with the Deep Implicity Study Group during the summer a
 => TODO
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzE4MTExMDUsMTMzMTk2MjUwNiwtMT
-E4MDI0ODYwNSwxNzgxMTE4Mzg4XX0=
+eyJoaXN0b3J5IjpbMTgwOTcwMzE0NywxMzMxOTYyNTA2LC0xMT
+gwMjQ4NjA1LDE3ODExMTgzODhdfQ==
 -->
