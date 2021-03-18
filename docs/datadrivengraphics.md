@@ -24,13 +24,11 @@ from those more related to the techniques and architectures employed in deep lea
 
 RGB-D data are a natural choice to represent 3D data as it comprises both appearance and geometry of a scene and it has a grid structure as regular images. This way, we can use everything already applied to images, including Convolutional Neural networks (CNNs) and we must only figure out how to make the best use of the depth channel to solve problems in 3D.
 
-SOME WORKS....[X, XX, XXX]
-
 Besides that, depth images and RGB-D data are quite easy to capture nowadays. It's been over a decade since low cost devices as the Kinect are available in the market and today we can even find depth sensors in mobile devices such as the iPad. Due to this scenario, we have a good research literature on how to deal with noise in depth maps and even how to reconstruct surfaces from these kind of data. 
 
 ### Multiview images
 
-Another way we can use images to represent 3D data is to work with a set of regular images from different viewpoints of the same object or scene. With a multi-view representation, we don't have any geometric data as we have in RGB-D, but with a sufficient amount of images we might be able to infer it. By working with multiples points of views we are also able to reduce noise, incompleteness, occlusion and illumination problems on data [XX Advances...]
+Another way we can use images to represent 3D data is to work with a set of regular images from different viewpoints of the same object or scene. With a multi-view representation, we don't have any geometric data as we have in RGB-D, but with a sufficient amount of images we might be able to infer it. By working with multiples points of views we are also able to reduce noise, incompleteness, occlusion and illumination problems on data [XX].
 
 ### Voxels
 
@@ -69,5 +67,5 @@ Ideally we want to input the more abundant and easily available data representat
 
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDc0MTA5OTRdfQ==
+eyJoaXN0b3J5IjpbMjgzODMzMDc3XX0=
 -->
