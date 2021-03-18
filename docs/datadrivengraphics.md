@@ -60,7 +60,7 @@ We can also represent geometric models as an isosurface of a scalar field. This 
 
 We presented some common choices for representing 3D data for machine learning in computer graphics. There are current efforts and advances being made in each of these directions. Some representations are mode related to ours sensors, so they are easier to capture, on the other hand other representations are more suitable for 3D computer graphics tasks and applications for *new medias* such as real time rendering, artistic modeling or automated assets generation. 
 
-Ideally we want to input the more abundant and easily available data representation such as ordinary 2D images and be able to infer the most scene/object properties as possible – such as it's geometry, topology, appearance and so on. Doing that in a useful and standard representation for new media applications and in a more accessible way are also ideal requirements. To tackle such a big challenge, we proceed by reviewing what is already built and is currently being built in terms of tools, algorithms and ideas for this research endeavor.
+Ideally we want to input the more abundant and easily available data representation such as ordinary 2D images and be able to infer the most scene/object properties as possible – such as it's geometry, topology, appearance and so on. Doing that in a useful and standard representation for new media applications and in a more accessible way are also ideal requirements. To tackle such a big challenge,  cee b ewig what is already built and is currently being built in terms of tools, algorithms and ideas for this research endeavor.
 
 
 
@@ -68,3 +68,6 @@ Ideally we want to input the more abundant and easily available data representat
 => TODO
 
 1. Ahmed, Eman & Saint, Alexandre & Das, Rig & Shabayek, Abdelrahman & Gusev, Gleb & Cherenkova, Kseniya & Aouada, Djamila. (2019). A survey on Deep Learning Advances on Different 3D Data Representations. 10.13140/RG.2.2.32083.02080.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE4MDc0MTA5OTRdfQ==
+-->
