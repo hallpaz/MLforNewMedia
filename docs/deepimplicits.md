@@ -140,19 +140,16 @@ It's interesting to notice that at a first moment, they had trouble to represent
 
 $$ \gamma(v) = [cos(2\pi Bv), sin(2\pi Bv)]^T$$
 
-Simply applying a Fourier feature mapping to the input (x, y) points before passing them to the network allows for rapid convergence (orange border image).
 
-This Fourier feature mapping is very simple. For an input point v (for the example above, (x, y) pixel coordinates) and a random Gaussian matrix B, where each entry is drawn independently from a normal distribution N(0, σ2), we use
+As we can imagine, this positional encoding based on Fourier Features transform is related to the SIREN approach which brought a better mathematical formulation to understand this problem and included the sinus function into the neural network representation.
+
+> - Can we use NeRF to solve panorama interpolation problem?
+>- Can we make it more general in this case?
+> - Can I estimate the distance between two centers of captured panoramas (unknown cameras)?
 
 
 
-to map input coordinates into a higher dimensional feature space before passing them through the network."
 
-As we can imagine, this positional encoding based on Fourier Features transform is related to the SIREN approach which brought a better mathematical formulation to understand th problem mathematically and included the sinus function into the neural network representation.
-
-**Can we use NeRF to solve panorama interpolation problem?**
-**Can we make it more general in this case?**
-**Can I estimate the distance between two centers of captured panoramas (unknow cameras)?**
 
 
 ### Multiview Neural Surface Reconstruction by Disentangling Geometry and Appearance
@@ -201,5 +198,5 @@ This study was conducted with the Deep Implicity Study Group during the summer a
 => TODO
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNjUwMjcxNl19
+eyJoaXN0b3J5IjpbLTI3NTY0MDY4MV19
 -->
