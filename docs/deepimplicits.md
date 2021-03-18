@@ -149,9 +149,6 @@ As we can imagine, this positional encoding based on Fourier Features transform 
 
 
 
-
-
-
 ### Multiview Neural Surface Reconstruction by Disentangling Geometry and Appearance
 
 Last, but not least, we have the approach used in [**Multiview Neural Surface Reconstruction by Disentangling Geometry and Appearance**](https://lioryariv.github.io/idr/). 
@@ -198,5 +195,5 @@ This study was conducted with the Deep Implicity Study Group during the summer a
 => TODO
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NTY0MDY4MV19
+eyJoaXN0b3J5IjpbLTQ3MTUyMTM3NV19
 -->
