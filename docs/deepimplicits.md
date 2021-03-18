@@ -120,7 +120,7 @@ These models represent implicit surfaces as the solution to the Eikonal equation
 
 $$||\nabla f|| = 1||$$ 
 
-Function reconstruction from it's derivative ... Introducing the derivative of a surface as a type fo data to the implicit surface representation and reconstruction problem is an interesting addition as it provides information about the normal vector to the surface, allowing
+Function reconstruction from it's derivative ... Introducing the derivative of a surface as a type of data to the implicit surface representation and reconstruction problem is an interesting addition as it provides information about the normal vector to the surface, allowing us to represent fine and sharp details [Dual Contouring of Hermite Data]. 
 
 make a neural network solve a differential equation.
 - reconstruct from it's derivative
@@ -198,5 +198,5 @@ This study was conducted with the Deep Implicity Study Group during the summer a
 => TODO
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MTExODM4OF19
+eyJoaXN0b3J5IjpbLTExODAyNDg2MDUsMTc4MTExODM4OF19
 -->
