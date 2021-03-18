@@ -4,7 +4,14 @@ title: Tools for AI Graphics
 nav_order: 2
 ---
 
-# TOOLs
+# TOOLs and Datasets
+
+## PyTorch3D
+
+We need tools 
+
+
+
 
 ## Datasets
 
@@ -22,10 +29,8 @@ is a static dataset which has 100 subjects (56 female and 44 male) of different 
 – ModelNet40?
 
 
-## PyTorch3D
 
-We need tools 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTcyMDU0NTldfQ==
+eyJoaXN0b3J5IjpbMTkxOTkyMDE1NSwtMjAxNzIwNTQ1OV19
 -->
