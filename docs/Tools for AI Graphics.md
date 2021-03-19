@@ -8,7 +8,7 @@ highlighter: rouge
 
 # TOOLs and Datasets
 
-To make science today, we usually need to build on top of others people work. This way, "each researcher puts a step on the stair" $^*$ so we can collectivelly progress to higher grounds.Besides the code that researchers usually publish on Github, there are some platforms built to help solving frequent problems on dealing with 3D data. For example:
+To make science today, we usually need to build on top of others people work. This way, "each researcher puts a step on the stair"$^*$ so we can collectivelly progress to higher grounds.Besides the code that researchers usually publish on Github, there are some platforms built to help solving frequent problems on dealing with 3D data. For example:
 
 * PyTorch3D
 * TensorFlow 3D
@@ -19,7 +19,7 @@ To make science today, we usually need to build on top of others people work. Th
 We chose PyTorch3D for our experiments as it is a platform with very active development. We had already tested it almost one year ago and we think the evolution presented by the framework in the last few months makes it a promising option.
 
 
-$^*$ *An usual comparison made by my advisor, professor Luiz Velho. The full statement makes a joke with the music Stairway to Heaven of Led Zeppelin.*
+> $^*$*An usual comparison made by my advisor, professor Luiz Velho. The full statement makes a joke with the music Stairway to Heaven of Led Zeppelin.*
 
 
 ## PyTorch3D
