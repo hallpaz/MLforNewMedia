@@ -41,7 +41,7 @@ The main data structure is called `Meshes` and it's used to represent a batch of
 
 > **all code examples in this page are from the course "Introduction to PyTorch3D", SIGGRAPH Asia 2020.**
 
-    ```python
+    ``` python
     import torch
     from pytorch3d import Meshes
 
@@ -117,8 +117,6 @@ An usual operation when working with 3D assets is to apply transforms as transla
 
 ### Operations
 
-
-
 K-Nearest Neighbors (KNN)
 
     ```python
@@ -148,24 +146,64 @@ Graph Convolution
 
 ### Losses
 
-We can access all regular losses functions such as Mean Squared Error or Cross Entropy
+We can access all regular losses functions such as Mean Squared Error or Cross Entropy already on PyTorch. However, when working with 3D objects we might need new ways to measure apporximation between our target result and our current result. For instance, if we want to deform a template mesh into a target mesh, we need some way to measure the distance between two meshes, two different discrete approximations of a surface in space. One such metric is the **Chamfer distance**. A naive implementation of this metric might use a lot of computational resources and limit the resolution for which we can work [1]. PyTorch3D provides implementation for the most commom losses used in AI Graphics.
+
+
+```python
+from pytorch3d.utils import ico_sphere
+from pytorch3d.ops import sample_points_from_meshes
+from pytorch3d.loss import chamfer_distance
+
+sphere_mesh1 = ico_sphere(level=3)
+sphere_mesh2 = ico_sphere(level=1)
+
+sample_sphere = sample_points_from_meshes(sphre_mesh1, 5000)
+sample_test = sample_points_from_meshes(sphre_mesh2, 5000)
+loss_chamfer, _ = chamfer_distance(sample_sphere, sample_test)
+```
+
+### Renderer
+
+One of the most powerful tools in the context of AI Graphics is differentiable rendering. By using a differentiable renderer, we can do "inverse rendering", that is, we can do backpropagation from images to scene properties, relating 2D and 3D and bridging techniques of computer graphics and vision. This opens new possibilities as self-supervised learning for training models and solving tasks.
+
+PyTorch3D has a modular implementation of a differentiable renderer, which separates the rasterizer and shader modules. It's heavily influenced by Soft Rasterizer [3], but it adds some engineering improvements for efficiency and flexibility.
+
+```python
+from pytorch3d.renderer import (
+    OpenGLPerspectiveCameras, look_at_view_transform,
+    RasterizationSettings, BlendParams,
+    MeshRenderer, MeshRasterizer, HardPhongShader
+)
+R, T = look_at_view_transform(2.7, 10, 20)
+cameras = OpenGLPerspectiveCameras(device=device, R=R, T=T)
+raster_settings = RasterizationSettings(
+    image_size=512,
+    blur_radius=0.0,
+    faces_per_pixel=1, # sets the value of K
+)
+
+renderer = MeshRenderer(
+    rasterizer=MeshRasterizer(cameras=cameras, raster_settings=raster_settings),
+    shader=HardPhongShader(device=device, cameras=cameras)
+)
+image = renderer(mesh)
+```
+This way, we can compute a loss given a ground truth image and update parameters using the gradients.
+
+```python
+loss = (gt_image - image).sum()
+loss.backward()
+```
+
+### Data Loaders
+
+Datasets are an essential part of any machine learning task. PyTorch3D implements Data Loaders to encapsulate operations on the ShapeNetCore and R2N2 datasets. This way, we have a standard interface to access models, labels and operate on batches during a task. Note, however, that the data must be downloaded independently. [This tutorial](https://pytorch3d.org/tutorials/dataloaders_ShapeNetCore_R2N2) shows how it works.
+
 
 
 ## Datasets
 
-
-"We overview below the most recent 3D datasets. There are two main categories of data used by the research community: real-world datasets and synthetic data rendered from CAD models. It is preferable to use the real-world data; however, real data is expensive to collect and usually suffers from noise and occlusion problems. In contrast, synthetic data can produce a huge amount of clean data with limited modelling problems. While this can be seen advantageous, it is quite limiting to the generalization ability of the learned model to real-world test data. It is also important to note that most 3D datasets are smaller than large 2D datasets such as, ImaдeNet [37]. However, there are some recent exceptions as described below. ModelNet [142] is the most commonly used dataset for 3D object recognition and classification. It contains roughly 130k annotated CAD models on 662 distinct categories. This dataset was collected using online search engines by querying for each of the categories. Then, the data were manually annotated. ModelNet provides the 3D geometry of the shape without any information about the texture. ModelNet has two subsets: ModelNet10 and ModelNet40. These subsets are used in most of the recently published work as shown in Table 1 and Table 2 in the supplementary material. In Section 3.2.1, we provide an extensive analysis of the methods employed on the ModelNet dataset for recognition and retrieval tasks highlighting the evolution of DL methods for learning such data. SUNCG [123] contains about 400K of full room models. This dataset is synthetic, however, each
-of these models was validated to be realistic and it was processed to be annotated with labelled object models. This dataset is important for learning the “scene-object" relationship and to fine-tune real-world data for scene understanding tasks. SceneNet [56] is also an RGB-D dataset that uses synthetic indoor rooms. This dataset contains about 5M scenes that are randomly sampled from a distribution to reflect the real world. However, not all the generated scenes are realistic and in practice, some of them are highly unrealistic. Still, this dataset can be used for fine-tuning and pre-training. In contrast, ScanNet [34] is a very rich dataset for real-world scenes. It is an annotated dataset which is labelled with some semantic segmentation, camera orientation and the 3D information that is gathered from 3D video sequences of real indoor scenes. It includes 2.5M views, which allows for training directly without pre-training on other datasets, as it is the case with different datasets. 
-
-In addition, datasets for 3D meshes are available for the 3D computer vision community. Most
-of the 3D meshes datasets are for 3D objects, body models or face data. The TOSCA [19] dataset provides high-resolution 3D synthetic meshes for non-rigid shapes. It contains a total of 80 objects in various poses. Objects within the same category have the same number of vertices and the same triangulation connectivity. TOSCA [19] provides artistic deformations on the meshes to simulate the real-world deformations of real scans. SHREC [18] adds a variety of artificial noise and artistic deformations on TOSCA scans. However, the artificial noise and deformations are not realistic and can’t generalize to new unseen real-world data which is a requirement for practical solutions. FAUST [13] dataset, however, provides 300 real-scans of 10 people in various poses. The 3DBodyTex dataset [108] is recently proposed with 200 real 3D body scans with high-resolution texture. 3DBodyTex is a registered dataset with the landmarks available for 3D human body models.
-
-The series ofthe BUdatasets is very popular for 3D faces under various expressions. BU-3DFE [151]
-is a static dataset which has 100 subjects (56 female and 44 male) of different ages and races. Each subject has in addition to the neutral face, six expressions as (happiness, sadness, anger, disgust, fear and surprise) of different intensities. There is 25 meshes for each subject in total, resulting in 2500 3D facial expressions dataset. Another very popular dataset is BU-4DFE [150], which is a dynamic facial expression dataset that has 101 subjects in total (58 female and 43 male). Similar to the BU-3DFE, each subject has six expressions. Other 3D faces datasets were available as well like the BP4D-Spontanous [156] and BP4D+ [157]
-
-– ShapeNet
-– ModelNet40?
-
+TODO: explain about some datasets and the importance of datasets on AI Graphics research.
 
 ## References
 
