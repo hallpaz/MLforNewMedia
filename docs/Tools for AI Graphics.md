@@ -33,9 +33,11 @@ It's important to notice that as we are dealing with tasks that demands a lot of
 6. Data Structures
 7. Transforms
 
-Data Structures
+### Data Structures
 
 The main data structure is called `Meshes` and it's used to represent a batch of 3D meshes - point clouds can be interpreted as a particular case when we have no faces information. A `Meshes` object is composed of a list of tensor of vertices and a list of tensors of faces. 
+
+> all code examples are based on the course "Introduction to PyTorch3D", SIGGRAPH Asia 2020.
 
     ```python
     import torch
@@ -48,7 +50,65 @@ The main data structure is called `Meshes` and it's used to represent a batch of
     ```
 
 
-A challenge when working with meshes is their heterogeneous nature, as the number of vertices and faces can be very different between each element of a batch. PyTorch3D provides control over the memory layout of the tensors, so depending on the operation we need to do, we can alternate between a packed or padded tensor representation.
+A challenge when working with meshes is their heterogeneous nature, as the number of vertices and faces can be very different between each element of a batch. PyTorch3D provides control over the memory layout of the tensors, so depending on the operation we need to do, we can alternate between a packed or padded tensor representation. For instance, if we want to work with a packed representation, we have the following functions available:
+
+    ```python 
+    # packed representation
+    verts_packed = mesh_batch.verts_packed()
+
+    # auxiliary tensors
+    mesh_to_vert_idx = mesh_batch.mesh_to_verts_packed_first_idx()
+    vert_to_mesh_idx = mesh_batch.verts_packed_to_mesh_idx()
+
+    # edges
+    edges = mesh_batch.edges_packed()
+
+    # face normals
+    face_normals = mesh_batch.faces_normals_packed()
+    ```
+
+### Input and Output
+
+PyTorch3D has a basic I/O module for reading `obj` files into `Meshes` and writing `Meshes` to `obj`files.
+
+    ```python
+    import torch
+    from pytorch3d.io import load_obj
+
+    verts, faces, aux = load_obj(obj_file)
+
+    faces = faces.verts_idx
+    normals = aux.normals
+    textures = aux.verts_uvs
+    materials = aux.material_colors
+    tex_maps = aux.texture_images
+    ```
+
+We read multiple files and load a batch of meshes at once.
+
+    ```python
+    import torch
+    from pytorch3d.io import load_objs_as_meshes
+
+    batched_mesh = load_objs_as_meshes([obj_file1, obj_file2, obj_file3])
+    ```
+
+### 3D Transforms
+
+An usual operation when working with 3D assets is to apply transforms as translation, rotation or scale to objects. Using PyTorch3D, we can compose and apply 3D transforms to meshes. It also has some utilities functions to compute rotation matrices, angles and other useful tasks with rigid transforms.
+
+    ```python
+    import torch
+    from pytorch3d.transforms import Transform3d, Rotate, Translate
+
+    # example 1
+    T = Translate(torch.FloatTensor([[1.0, 2.0, 3.0]]))
+    R = Rotate(torch.FloatTensor([[0, 1, 0], [0, 0, 1], [1, 0, 0]]))
+    RT = Transform3d().compose(R, T)
+
+    # example 2
+    T = Transform3d().scale(2, 1, 3).translate(1, 2, 3)
+    ```
 
 
 
@@ -68,8 +128,7 @@ is a static dataset which has 100 subjects (56 female and 44 male) of different 
 – ModelNet40?
 
 
+## References
 
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxOTkyMDE1NSwtMjAxNzIwNTQ1OV19
--->
+1. Nikhila Ravi; Jeremy Reizenstein; David Novotny; Taylor Gordon; Wan-Yen Lo; Justin Johnson; Georgia Gkioxari. **Accelerating 3D Deep Learning with PyTorch3D**. arXiv:2007.08501, 2020.
+2. Introduction to PyTorch3D. SIGGRAPH Asia 2020 Course. Available at https://youtu.be/MOBAJb5nJRI
