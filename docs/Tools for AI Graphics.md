@@ -6,10 +6,49 @@ nav_order: 2
 
 # TOOLs and Datasets
 
-## PyTorch3D
-
 We need tools 
 
+To make science.. build on top of others people work. This way, "each researcher puts a step on the stair"$^*$ so we can collectivelly progress to higher grounds.
+
+those foundations we already know 
+
+
+
+$^*$ *An usual comparison made by my advisor, professor Luiz Velho. The full statement makes a joke with the music Stairway to Heaven of Led Zeppelin.
+
+
+Besides the code that researchers usually publish on Github, there are some platforms built to help solving frequent problems on dealing with 3D data. We'll talk more about PyTorch3D.
+
+## PyTorch3D
+
+PyTorch3D is an open source framework built on top of PyTorch to help accelerate research on 3D deep learning. It was created and is mainly maintained by the facebook AI Research team. PyTorch is a well adopted framework for many deep learning use cases as it uses Python, a programming language largely adopted by the AI community, and builds on top of Torch, which was born in the NYU.
+
+It's important to notice that as we are dealing with tasks that demands a lot of computations, we must build and adopt efficient solutions, otherwise it might take too long to obtain a result. PyTorch3D is an effort towards an optimized and efficient resusable components for research. it's divided on seven modules:
+
+1. Operations
+2. Loss functions
+3. Renderer
+4. Data loaders
+5. I/O
+6. Data Structures
+7. Transforms
+
+Data Structures
+
+The main data structure is called `Meshes` and it's used to represent a batch of 3D meshes - point clouds can be interpreted as a particular case when we have no faces information. A `Meshes` object is composed of a list of tensor of vertices and a list of tensors of faces. 
+
+    ```python
+    import torch
+    from pytorch3d import Meshes
+
+    verts_list = [torch.tensor([...]), ..., torch.tensor([...])]
+    faces_list = [torch.tensor([...]), ..., torch.tensor([...])]
+
+    mesh_batch = Meshes(verts=verts_list, faces=faces_list)
+    ```
+
+
+A challenge when working with meshes is their heterogeneous nature, as the number of vertices and faces can be very different between each element of a batch. PyTorch3D provides control over the memory layout of the tensors, so depending on the operation we need to do, we can alternate between a packed or padded tensor representation.
 
 
 

@@ -57,9 +57,9 @@ On the other hand, **Deep Local Shapes** [X] takes the key idea of DeepSDF one s
 
 ### CvxNet: Learnable Convex Decomposition
 
-CvxNet relies on convex decompositions as universal approximators of 3D geometry. Like Occupancy Networks, they model an object via an indicator function $O : R^e →[0, 1]$  with $∂O = {x ∈ R^3 / O(x) = 0.5}$ representing the surface of the object. However, they decompose the object in $K$ primitive convexes using a template compositional tree structure.
+CvxNet relies on convex decompositions as universal approximators of 3D geometry. Like Occupancy Networks, they model an object via an indicator function $$O : R^3 →[0, 1]$$  with $$∂O = \{x ∈ R^3 / O(x) = 0.5\}$$ representing the surface of the object. However, they decompose the object in $K$ primitive convexes using a template compositional tree structure.
 
-This convex decomposition is differentiable and it is used to train an end-to-end image encoder. Given an input (e.g. an image, point cloud, or voxel grid) the encoder estimates the parameters \(β_k\) of their template representation $ Ô(·) $ with $K$ primitives (indexed by k). Then, the template is evaluated at random sample points $x$ and a training loss is used to measure the quality of the approximation $Ô(x) ≈ O(x)$. 
+This convex decomposition is differentiable and it is used to train an end-to-end image encoder. Given an input (e.g. an image, point cloud, or voxel grid) the encoder estimates the parameters $β_k$ of their template representation $ Ô(·) $ with $K$ primitives. Then, the template is evaluated at random sample points $x$ and a training loss is used to measure the quality of the approximation $Ô(x) ≈ O(x)$. 
 
 ### BSP-Net
 
@@ -67,8 +67,6 @@ BSP-Net is a deep generative network which directly outputs compact and watertig
 
 As it outputs polygonal meshes natively based on opertaions on planes, it's able to reconstruct and recover sharp geometric features with low-poly in opposition to meshes extracted using methods like marshing cubes. The learned BSP-tree also allows it to infer both shape segmentation and part correspondence.  
 
-- with arbitrary topology and structure variety.
-- The core ingredient of BSP is an operation for recursive subdivision of space to obtain convex sets. 
 
 ## 3rd generation models
 
@@ -98,6 +96,8 @@ $$ \gamma(v) = [cos(2\pi Bv), sin(2\pi Bv)]^T $$
 
 As we can imagine, this positional encoding based on Fourier Features transform is related to the SIREN approach which brought a better mathematical formulation to understand this problem and included the sinus function into the neural network representation.
 
+
+#### *Thoughts and questions*
 > - Can we use NeRF to solve panorama interpolation problem?
 > - Can we make it more general in this case?
 > - Can I estimate the distance between two centers of captured panoramas (unknown cameras)?
