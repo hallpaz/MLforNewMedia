@@ -2,6 +2,8 @@
 layout: default
 title: Tools for AI Graphics
 nav_order: 2
+math: mathjax3
+highlighter: rouge
 ---
 
 # TOOLs and Datasets
@@ -37,7 +39,7 @@ It's important to notice that as we are dealing with tasks that demands a lot of
 
 The main data structure is called `Meshes` and it's used to represent a batch of 3D meshes - point clouds can be interpreted as a particular case when we have no faces information. A `Meshes` object is composed of a list of tensor of vertices and a list of tensors of faces. 
 
-> all code examples are based on the course "Introduction to PyTorch3D", SIGGRAPH Asia 2020.
+> **all code examples in this page are from the course "Introduction to PyTorch3D", SIGGRAPH Asia 2020.**
 
     ```python
     import torch
@@ -52,20 +54,23 @@ The main data structure is called `Meshes` and it's used to represent a batch of
 
 A challenge when working with meshes is their heterogeneous nature, as the number of vertices and faces can be very different between each element of a batch. PyTorch3D provides control over the memory layout of the tensors, so depending on the operation we need to do, we can alternate between a packed or padded tensor representation. For instance, if we want to work with a packed representation, we have the following functions available:
 
-    ```python 
-    # packed representation
-    verts_packed = mesh_batch.verts_packed()
 
-    # auxiliary tensors
-    mesh_to_vert_idx = mesh_batch.mesh_to_verts_packed_first_idx()
-    vert_to_mesh_idx = mesh_batch.verts_packed_to_mesh_idx()
+{% highlight markdown %}
+```python 
+# packed representation
+verts_packed = mesh_batch.verts_packed()
 
-    # edges
-    edges = mesh_batch.edges_packed()
+# auxiliary tensors
+mesh_to_vert_idx = mesh_batch.mesh_to_verts_packed_first_idx()
+vert_to_mesh_idx = mesh_batch.verts_packed_to_mesh_idx()
 
-    # face normals
-    face_normals = mesh_batch.faces_normals_packed()
-    ```
+# edges
+edges = mesh_batch.edges_packed()
+
+# face normals
+face_normals = mesh_batch.faces_normals_packed()
+```
+{% endhighlight%}
 
 ### Input and Output
 
@@ -110,6 +115,40 @@ An usual operation when working with 3D assets is to apply transforms as transla
     T = Transform3d().scale(2, 1, 3).translate(1, 2, 3)
     ```
 
+### Operations
+
+
+
+K-Nearest Neighbors (KNN)
+
+    ```python
+    import torch
+    from pytorch3d.ops import knn_points
+
+    N, P1, P2, D, K = 32, 128, 256, 3, 1
+    pts1 = torch.randn(N, P1, D)
+    pts2 = torch.randn(N, P2, D)
+
+    dists, idx, knn = knn_points(pts1, pts2, K=K)
+    ```
+
+Graph Convolution
+
+    ```python
+    import torch
+    from pytorch3d.ops import GraphConv
+
+    conv = GraphConv(input_dim, output_dim, init="normal", directed=False)
+
+    # given a mesh which is a Meshes object
+    verts = mesh.verts_packed()
+    edges = mesh.edges_packed()
+    y = conv(verts, edges)
+    ```
+
+### Losses
+
+We can access all regular losses functions such as Mean Squared Error or Cross Entropy
 
 
 ## Datasets
