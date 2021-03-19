@@ -12,6 +12,3 @@ nav_order: 4
 - Challenges
 - Infrastructure
 - Applications
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MTgxMDgyMl19
--->

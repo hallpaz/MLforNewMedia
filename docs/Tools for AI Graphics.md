@@ -8,18 +8,19 @@ highlighter: rouge
 
 # TOOLs and Datasets
 
-We need tools 
+To make science today, we usually need to build on top of others people work. This way, "each researcher puts a step on the stair" $^*$ so we can collectivelly progress to higher grounds.Besides the code that researchers usually publish on Github, there are some platforms built to help solving frequent problems on dealing with 3D data. For example:
 
-To make science.. build on top of others people work. This way, "each researcher puts a step on the stair"$^*$ so we can collectivelly progress to higher grounds.
+* PyTorch3D
+* TensorFlow 3D
+* TensorFlow graphics
+* Kaolin
+* Unity Barracuda
 
-those foundations we already know 
+We chose PyTorch3D for our experiments as it is a platform with very active development. We had already tested it almost one year ago and we think the evolution presented by the framework in the last few months makes it a promising option.
 
 
+$^*$ *An usual comparison made by my advisor, professor Luiz Velho. The full statement makes a joke with the music Stairway to Heaven of Led Zeppelin.*
 
-$^*$ *An usual comparison made by my advisor, professor Luiz Velho. The full statement makes a joke with the music Stairway to Heaven of Led Zeppelin.
-
-
-Besides the code that researchers usually publish on Github, there are some platforms built to help solving frequent problems on dealing with 3D data. We'll talk more about PyTorch3D.
 
 ## PyTorch3D
 
@@ -27,35 +28,33 @@ PyTorch3D is an open source framework built on top of PyTorch to help accelerate
 
 It's important to notice that as we are dealing with tasks that demands a lot of computations, we must build and adopt efficient solutions, otherwise it might take too long to obtain a result. PyTorch3D is an effort towards an optimized and efficient resusable components for research. it's divided on seven modules:
 
-1. Operations
-2. Loss functions
-3. Renderer
-4. Data loaders
-5. I/O
-6. Data Structures
-7. Transforms
+1. Data Structures
+2. Input/Output
+3. Transforms
+4. Operations
+5. Loss functions
+6. Renderer
+7. Data loaders
 
 ### Data Structures
 
 The main data structure is called `Meshes` and it's used to represent a batch of 3D meshes - point clouds can be interpreted as a particular case when we have no faces information. A `Meshes` object is composed of a list of tensor of vertices and a list of tensors of faces. 
 
-> **all code examples in this page are from the course "Introduction to PyTorch3D", SIGGRAPH Asia 2020.**
+> **all code examples in this page are from the course "Introduction to PyTorch3D", SIGGRAPH Asia 2020. [2]**
 
-    ``` python
-    import torch
-    from pytorch3d import Meshes
+``` python
+import torch
+from pytorch3d import Meshes
 
-    verts_list = [torch.tensor([...]), ..., torch.tensor([...])]
-    faces_list = [torch.tensor([...]), ..., torch.tensor([...])]
+verts_list = [torch.tensor([...]), ..., torch.tensor([...])]
+faces_list = [torch.tensor([...]), ..., torch.tensor([...])]
 
-    mesh_batch = Meshes(verts=verts_list, faces=faces_list)
-    ```
-
+mesh_batch = Meshes(verts=verts_list, faces=faces_list)
+```
 
 A challenge when working with meshes is their heterogeneous nature, as the number of vertices and faces can be very different between each element of a batch. PyTorch3D provides control over the memory layout of the tensors, so depending on the operation we need to do, we can alternate between a packed or padded tensor representation. For instance, if we want to work with a packed representation, we have the following functions available:
 
 
-{% highlight markdown %}
 ```python 
 # packed representation
 verts_packed = mesh_batch.verts_packed()
@@ -70,79 +69,79 @@ edges = mesh_batch.edges_packed()
 # face normals
 face_normals = mesh_batch.faces_normals_packed()
 ```
-{% endhighlight%}
+
 
 ### Input and Output
 
 PyTorch3D has a basic I/O module for reading `obj` files into `Meshes` and writing `Meshes` to `obj`files.
 
-    ```python
-    import torch
-    from pytorch3d.io import load_obj
+```python
+import torch
+from pytorch3d.io import load_obj
 
-    verts, faces, aux = load_obj(obj_file)
+verts, faces, aux = load_obj(obj_file)
 
-    faces = faces.verts_idx
-    normals = aux.normals
-    textures = aux.verts_uvs
-    materials = aux.material_colors
-    tex_maps = aux.texture_images
-    ```
+faces = faces.verts_idx
+normals = aux.normals
+textures = aux.verts_uvs
+materials = aux.material_colors
+tex_maps = aux.texture_images
+```
 
-We read multiple files and load a batch of meshes at once.
+We can read multiple files and load a batch of meshes at once.
 
-    ```python
-    import torch
-    from pytorch3d.io import load_objs_as_meshes
+```python
+import torch
+from pytorch3d.io import load_objs_as_meshes
 
-    batched_mesh = load_objs_as_meshes([obj_file1, obj_file2, obj_file3])
-    ```
+batched_mesh = load_objs_as_meshes([obj_file1, obj_file2, obj_file3])
+```
 
 ### 3D Transforms
 
 An usual operation when working with 3D assets is to apply transforms as translation, rotation or scale to objects. Using PyTorch3D, we can compose and apply 3D transforms to meshes. It also has some utilities functions to compute rotation matrices, angles and other useful tasks with rigid transforms.
 
-    ```python
-    import torch
-    from pytorch3d.transforms import Transform3d, Rotate, Translate
+```python
+import torch
+from pytorch3d.transforms import Transform3d, Rotate, Translate
 
-    # example 1
-    T = Translate(torch.FloatTensor([[1.0, 2.0, 3.0]]))
-    R = Rotate(torch.FloatTensor([[0, 1, 0], [0, 0, 1], [1, 0, 0]]))
-    RT = Transform3d().compose(R, T)
+# example 1
+T = Translate(torch.FloatTensor([[1.0, 2.0, 3.0]]))
+R = Rotate(torch.FloatTensor([[0, 1, 0], [0, 0, 1], [1, 0, 0]]))
+RT = Transform3d().compose(R, T)
 
-    # example 2
-    T = Transform3d().scale(2, 1, 3).translate(1, 2, 3)
-    ```
+# example 2
+T = Transform3d().scale(2, 1, 3).translate(1, 2, 3)
+```
 
 ### Operations
 
-K-Nearest Neighbors (KNN)
+The `ops` module of PyTorch3D implements some operations on meshes such as the K-Nearest Neighbors (KNN), Chamfer distance, graph convolutions, vertices alignment and the `cubify` operator, that converts an 3D occupancy grid into a mesh. For instance, we could compute the KNN between two point clouds using the following code:
 
-    ```python
-    import torch
-    from pytorch3d.ops import knn_points
+```python
+import torch
+from pytorch3d.ops import knn_points
 
-    N, P1, P2, D, K = 32, 128, 256, 3, 1
-    pts1 = torch.randn(N, P1, D)
-    pts2 = torch.randn(N, P2, D)
+N, P1, P2, D, K = 32, 128, 256, 3, 1
+pts1 = torch.randn(N, P1, D)
+pts2 = torch.randn(N, P2, D)
 
-    dists, idx, knn = knn_points(pts1, pts2, K=K)
-    ```
+dists, idx, knn = knn_points(pts1, pts2, K=K)
+```
 
-Graph Convolution
+Similarly, we could easily compute graph convolutions by importing the appropriated function:
 
-    ```python
-    import torch
-    from pytorch3d.ops import GraphConv
+```python
+import torch
+from pytorch3d.ops import GraphConv
 
-    conv = GraphConv(input_dim, output_dim, init="normal", directed=False)
+conv = GraphConv(input_dim, output_dim, init="normal", directed=False)
 
-    # given a mesh which is a Meshes object
-    verts = mesh.verts_packed()
-    edges = mesh.edges_packed()
-    y = conv(verts, edges)
-    ```
+# given a mesh which is a Meshes object
+verts = mesh.verts_packed()
+edges = mesh.edges_packed()
+y = conv(verts, edges)
+```
 
 ### Losses
 
@@ -201,7 +200,7 @@ Datasets are an essential part of any machine learning task. PyTorch3D implement
 
 
 
-## Datasets
+## DATASETS
 
 TODO: explain about some datasets and the importance of datasets on AI Graphics research.
 

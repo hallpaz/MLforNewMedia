@@ -72,7 +72,7 @@ As it outputs polygonal meshes natively based on opertaions on planes, it's able
 
 These models represent implicit surfaces as the solution to the Eikonal equation - the particular case where the gradient is equal to 1 represents a signed distance function.
 
-$$||\nabla f|| = 1||$$ 
+$$||\nabla f|| = 1$$ 
 
 Introducing the derivative of a surface as a type of data to the implicit surface representation and reconstruction problem is an interesting addition as it provides information about the normal vector to the surface, allowing us to represent fine and sharp details [Dual Contouring of Hermite Data]. 
 
